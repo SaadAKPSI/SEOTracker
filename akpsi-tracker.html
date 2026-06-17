@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AKΨ Mention Tracker</title>
+  <style>
+    :root {
+      --purple: #4b2d7f;
+      --purple-light: #6b42b8;
+      --gold: #c9a84c;
+      --gold-light: #f0cc72;
+      --bg: #0f0d14;
+      --surface: #1a1626;
+      --surface2: #231d33;
+      --border: #2e2545;
+      --text: #e8e4f0;
+      --muted: #8b7fa8;
+      --red: #cf4a4a;
+      --green: #4acf8a;
+      --orange: #cf8a4a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+    header {
+      background: linear-gradient(135deg, var(--purple) 0%, #2a1850 100%);
+      border-bottom: 2px solid var(--gold);
+      padding: 20px 32px;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .header-left { display: flex; align-items: center; gap: 16px; }
+    .logo { width: 52px; height: 52px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 800; color: var(--purple); flex-shrink: 0; }
+    .header-title h1 { font-size: 22px; font-weight: 700; }
+    .header-title p { font-size: 13px; color: var(--gold-light); margin-top: 2px; }
+    .header-right { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+
+    .status-pill { display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 6px 14px; font-size: 12px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+    .dot.loading { background: var(--gold); animation: pulse 0.8s infinite; }
+    .dot.error { background: var(--red); animation: none; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+    .btn { display: flex; align-items: center; gap: 7px; background: var(--gold); color: var(--purple); border: none; border-radius: 8px; padding: 9px 18px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+    .btn:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .btn:disabled { opacity: 0.5; cursor: default; transform: none; }
+
+    .stats-bar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 14px 32px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .stat { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+    .stat-label { color: var(--muted); }
+    .stat-value { font-weight: 600; }
+    .stat-count { font-size: 18px; font-weight: 700; color: var(--gold); }
+    .divider { width: 1px; height: 24px; background: var(--border); }
+
+    /* Source status indicators */
+    .source-status { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+    .src-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); }
+    .src-dot.ok { background: var(--green); }
+    .src-dot.err { background: var(--red); }
+    .src-dot.loading { background: var(--gold); animation: pulse 0.8s infinite; }
+
+    .tabs { background: var(--surface); padding: 0 32px; display: flex; gap: 0; border-bottom: 1px solid var(--border); overflow-x: auto; }
+    .tab { padding: 13px 20px; font-size: 13px; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+    .tab:hover { color: var(--text); }
+    .tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+    .tab-badge { background: var(--surface2); border-radius: 10px; padding: 1px 7px; font-size: 11px; color: var(--muted); }
+    .tab.active .tab-badge { background: rgba(201,168,76,0.15); color: var(--gold); }
+
+    main { padding: 28px 32px; max-width: 1100px; margin: 0 auto; }
+
+    /* Banners */
+    .error-banner { background: rgba(207,74,74,0.1); border: 1px solid rgba(207,74,74,0.3); border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; display: none; }
+    .error-banner.show { display: block; }
+    .error-banner-title { font-size: 13px; font-weight: 700; color: #e87a7a; margin-bottom: 6px; }
+    .error-banner-body { font-size: 12px; color: var(--muted); line-height: 1.6; }
+    .error-banner-body a { color: var(--gold); }
+
+    .file-banner { background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.35); border-radius: 10px; padding: 18px 22px; margin-bottom: 20px; display: none; }
+    .file-banner.show { display: block; }
+    .file-banner-title { font-size: 14px; font-weight: 700; color: var(--gold); margin-bottom: 8px; }
+    .file-banner-body { font-size: 13px; color: var(--muted); line-height: 1.7; }
+    .file-banner-body code { background: var(--surface2); color: var(--text); padding: 2px 7px; border-radius: 4px; font-size: 12px; }
+    .file-banner-body strong { color: var(--text); }
+
+    .cards { display: flex; flex-direction: column; gap: 14px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; transition: border-color 0.2s, transform 0.15s; text-decoration: none; display: block; color: inherit; }
+    .card:hover { border-color: var(--purple-light); transform: translateY(-1px); }
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+    .card-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .source-badge { display: flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; border: 1px solid; }
+    .badge-news { color: #4aaacf; border-color: rgba(74,170,207,0.3); background: rgba(74,170,207,0.1); }
+    .badge-reddit { color: #ff6314; border-color: rgba(255,99,20,0.3); background: rgba(255,99,20,0.1); }
+    .badge-hn { color: #ff6600; border-color: rgba(255,102,0,0.3); background: rgba(255,102,0,0.1); }
+    .card-time { font-size: 12px; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+    .card-title { font-size: 15px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+    .card-snippet { font-size: 13px; color: var(--muted); line-height: 1.55; }
+    .card-footer { margin-top: 12px; display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--muted); }
+
+    .state-box { background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 60px 40px; text-align: center; }
+    .state-icon { font-size: 44px; margin-bottom: 14px; }
+    .state-title { font-size: 17px; font-weight: 600; margin-bottom: 8px; }
+    .state-sub { font-size: 13px; color: var(--muted); max-width: 420px; margin: 0 auto; line-height: 1.6; }
+    .state-sub a { color: var(--gold); }
+
+    .spinner { display: inline-block; width: 36px; height: 36px; border: 3px solid var(--border); border-top-color: var(--gold); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 16px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Progress bars per source */
+    .fetch-progress { display: flex; gap: 10px; justify-content: center; margin-top: 18px; flex-wrap: wrap; }
+    .fp-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); background: var(--surface2); border-radius: 6px; padding: 5px 12px; }
+    .fp-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+    .fp-dot.loading { background: var(--gold); animation: pulse 0.8s infinite; }
+    .fp-dot.ok { background: var(--green); }
+    .fp-dot.err { background: var(--red); }
+
+    @media (max-width: 600px) {
+      header, .stats-bar, .tabs, main { padding-left: 16px; padding-right: 16px; }
+      .tab { padding: 11px 12px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="logo">AKΨ</div>
+    <div class="header-title">
+      <h1>Mention Tracker</h1>
+      <p>Alpha Kappa Psi · across the web</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="status-pill">
+      <div class="dot" id="statusDot"></div>
+      <span id="statusText">Ready</span>
+    </div>
+    <button class="btn" id="refreshBtn" onclick="fetchAll()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>
+      Refresh Now
+    </button>
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="stat">
+    <span class="stat-count" id="totalCount">—</span>
+    <span class="stat-label">mentions found</span>
+  </div>
+  <div class="divider"></div>
+  <div class="stat">
+    <span class="stat-label">Updated:</span>
+    <span class="stat-value" id="lastUpdated">Never</span>
+  </div>
+  <div class="divider"></div>
+  <div class="stat">
+    <span class="stat-label">Next auto-refresh:</span>
+    <span class="stat-value" id="countdown">—</span>
+  </div>
+  <div class="divider"></div>
+  <div class="stat" style="gap:14px">
+    <div class="source-status"><div class="src-dot" id="dot-news"></div><span id="lbl-news" style="color:var(--muted)">News</span></div>
+    <div class="source-status"><div class="src-dot" id="dot-reddit"></div><span id="lbl-reddit" style="color:var(--muted)">Reddit</span></div>
+    <div class="source-status"><div class="src-dot" id="dot-hn"></div><span id="lbl-hn" style="color:var(--muted)">HN</span></div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" onclick="filterTab('all',this)">All <span class="tab-badge" id="cnt-all">0</span></div>
+  <div class="tab" onclick="filterTab('news',this)">📰 News <span class="tab-badge" id="cnt-news">0</span></div>
+  <div class="tab" onclick="filterTab('reddit',this)">🤖 Reddit <span class="tab-badge" id="cnt-reddit">0</span></div>
+  <div class="tab" onclick="filterTab('hn',this)">🟠 Hacker News <span class="tab-badge" id="cnt-hn">0</span></div>
+</div>
+
+<main>
+  <!-- file:// warning banner -->
+  <div class="file-banner" id="fileBanner">
+    <div class="file-banner-title">⚡ Almost there — one quick step needed</div>
+    <div class="file-banner-body">
+      Browsers block outbound network requests when a page is opened directly from a file (<code>file://</code>).
+      This is a browser security rule, not a bug in the tracker.<br><br>
+      <strong>Fix option 1 — Push to GitHub Pages (recommended):</strong> Once live on <code>yourusername.github.io/repo</code>, everything will work automatically with no changes needed.<br><br>
+      <strong>Fix option 2 — Serve locally right now:</strong> Open a terminal in the folder containing this file and run:<br>
+      <code>npx serve .</code> &nbsp;or&nbsp; <code>python -m http.server 8080</code><br>
+      Then open <code>http://localhost:8080/akpsi-tracker.html</code> in your browser.
+    </div>
+  </div>
+
+  <!-- Error banner -->
+  <div class="error-banner" id="errorBanner">
+    <div class="error-banner-title">⚠️ Some sources failed to load</div>
+    <div class="error-banner-body" id="errorBannerBody"></div>
+  </div>
+
+  <div class="cards" id="cardsContainer">
+    <div class="state-box">
+      <div class="state-icon">🔍</div>
+      <div class="state-title">Ready to scan</div>
+      <div class="state-sub">Click <strong>Refresh Now</strong> to fetch the latest Alpha Kappa Psi mentions from across the web.</div>
+    </div>
+  </div>
+</main>
+
+<script>
+// ── Config ──────────────────────────────────────────────────
+const QUERY      = 'Alpha Kappa Psi';
+const CACHE_KEY  = 'akpsi_cache_v2';
+const REFRESH_MS = 2 * 24 * 60 * 60 * 1000; // 2 days
+
+// CORS proxies (tried in order)
+const PROXIES = [
+  url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+  url => `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`,
+];
+
+let allMentions   = [];
+let currentFilter = 'all';
+let cdTimer       = null;
+let sourceStatus  = { news: 'idle', reddit: 'idle', hn: 'idle' };
+
+// ── Utilities ────────────────────────────────────────────────
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function timeAgo(d) {
+  const diff = Date.now() - new Date(d).getTime();
+  const m = Math.floor(diff/60000);
+  if (m < 1)  return 'just now';
+  if (m < 60) return m + 'm ago';
+  const h = Math.floor(m/60);
+  if (h < 24) return h + 'h ago';
+  return Math.floor(h/24) + 'd ago';
+}
+function fmtDate(ts) { return new Date(ts).toLocaleString(); }
+function setStatus(state, text) {
+  document.getElementById('statusDot').className = 'dot' + (state==='loading'?' loading':state==='error'?' error':'');
+  document.getElementById('statusText').textContent = text;
+}
+function setSrcStatus(src, state) {
+  sourceStatus[src] = state;
+  const dot = document.getElementById('dot-' + src);
+  const lbl = document.getElementById('lbl-' + src);
+  if (!dot) return;
+  dot.className = 'src-dot' + (state==='ok'?' ok':state==='err'?' err':state==='loading'?' loading':'');
+  lbl.style.color = state==='ok' ? 'var(--green)' : state==='err' ? 'var(--red)' : 'var(--muted)';
+}
+function updateCounts() {
+  const all    = allMentions.length;
+  const news   = allMentions.filter(m=>m.source==='news').length;
+  const reddit = allMentions.filter(m=>m.source==='reddit').length;
+  const hn     = allMentions.filter(m=>m.source==='hn').length;
+  document.getElementById('totalCount').textContent = all;
+  document.getElementById('cnt-all').textContent    = all;
+  document.getElementById('cnt-news').textContent   = news;
+  document.getElementById('cnt-reddit').textContent = reddit;
+  document.getElementById('cnt-hn').textContent     = hn;
+}
+function startCountdown(fromTs) {
+  if (cdTimer) clearInterval(cdTimer);
+  function tick() {
+    const diff = (fromTs + REFRESH_MS) - Date.now();
+    if (diff <= 0) { clearInterval(cdTimer); fetchAll(); return; }
+    const h = Math.floor(diff/3600000);
+    const m = Math.floor((diff%3600000)/60000);
+    document.getElementById('countdown').textContent = h>0 ? `${h}h ${m}m` : `${m}m`;
+  }
+  tick(); cdTimer = setInterval(tick, 30000);
+}
+
+// ── Fetch with CORS proxy fallback ───────────────────────────
+async function fetchWithProxy(url, asText) {
+  // Try direct first
+  try {
+    const r = await fetch(url, { signal: AbortSignal.timeout(8000) });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return asText ? await r.text() : await r.json();
+  } catch (_) {}
+
+  // Try proxies in order
+  for (const makeProxy of PROXIES) {
+    try {
+      const proxyUrl = makeProxy(url);
+      const r = await fetch(proxyUrl, { signal: AbortSignal.timeout(10000) });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      if (asText) return await r.text();
+      const data = await r.json();
+      // allorigins wraps in { contents: "..." }
+      if (data && data.contents) {
+        return typeof data.contents === 'string' ? JSON.parse(data.contents) : data.contents;
+      }
+      return data;
+    } catch (_) {}
+  }
+  throw new Error('All fetch attempts failed for: ' + url);
+}
+
+// ── News via RSS → rss2json ──────────────────────────────────
+async function fetchNews() {
+  setSrcStatus('news', 'loading');
+  const rssUrl = `https://news.google.com/rss/search?q=%22Alpha+Kappa+Psi%22&hl=en-US&gl=US&ceid=US:en`;
+  const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=25`;
+  try {
+    const data = await fetchWithProxy(apiUrl, false);
+    const items = data.items || [];
+    if (!items.length) { setSrcStatus('news', 'err'); return []; }
+    setSrcStatus('news', 'ok');
+    return items.map(item => ({
+      source:    'news',
+      title:     item.title || '',
+      url:       item.link  || '#',
+      date:      item.pubDate || new Date().toISOString(),
+      snippet:   (item.description || '').replace(/<[^>]+>/g,'').slice(0,180),
+      publisher: item.author || extractDomain(item.link),
+    }));
+  } catch (e) {
+    console.warn('[News]', e);
+    setSrcStatus('news', 'err');
+    return [];
+  }
+}
+
+// ── Reddit (public search JSON) ──────────────────────────────
+async function fetchReddit() {
+  setSrcStatus('reddit', 'loading');
+  const url = `https://www.reddit.com/search.json?q=%22Alpha+Kappa+Psi%22&sort=new&limit=25&raw_json=1`;
+  try {
+    const data = await fetchWithProxy(url, false);
+    const posts = data?.data?.children || [];
+    if (!posts.length) { setSrcStatus('reddit', 'err'); return []; }
+    setSrcStatus('reddit', 'ok');
+    return posts.map(p => ({
+      source:   'reddit',
+      title:    p.data.title || '',
+      url:      'https://reddit.com' + p.data.permalink,
+      date:     new Date(p.data.created_utc * 1000).toISOString(),
+      snippet:  (p.data.selftext || '').slice(0,180),
+      sub:      p.data.subreddit,
+      score:    p.data.score,
+      comments: p.data.num_comments,
+      author:   p.data.author,
+    }));
+  } catch (e) {
+    console.warn('[Reddit]', e);
+    setSrcStatus('reddit', 'err');
+    return [];
+  }
+}
+
+// ── HackerNews via Algolia ───────────────────────────────────
+async function fetchHN() {
+  setSrcStatus('hn', 'loading');
+  const url = `https://hn.algolia.com/api/v1/search?query=%22Alpha+Kappa+Psi%22&tags=(story,comment)&hitsPerPage=20`;
+  try {
+    const data = await fetchWithProxy(url, false);
+    const hits = data.hits || [];
+    setSrcStatus('hn', hits.length ? 'ok' : 'err');
+    return hits.map(h => ({
+      source:   'hn',
+      title:    h.title || (h.comment_text || '').slice(0,100) || '(comment)',
+      url:      h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
+      date:     h.created_at || new Date().toISOString(),
+      snippet:  (h.comment_text || '').slice(0,180),
+      score:    h.points,
+      comments: h.num_comments,
+      author:   h.author,
+    }));
+  } catch (e) {
+    console.warn('[HN]', e);
+    setSrcStatus('hn', 'err');
+    return [];
+  }
+}
+
+function extractDomain(url) {
+  try { return new URL(url).hostname.replace('www.',''); } catch { return ''; }
+}
+
+// ── Render ───────────────────────────────────────────────────
+function renderCards(items) {
+  const c = document.getElementById('cardsContainer');
+  if (!items.length) {
+    c.innerHTML = `<div class="state-box"><div class="state-icon">🤷</div><div class="state-title">No mentions found</div><div class="state-sub">Nothing here yet for this filter. Try refreshing or check the other tabs.</div></div>`;
+    return;
+  }
+  c.innerHTML = items.map(item => {
+    const badge = item.source === 'news'
+      ? `<span class="source-badge badge-news">📰 News</span>`
+      : item.source === 'reddit'
+      ? `<span class="source-badge badge-reddit">🤖 r/${esc(item.sub||'')}</span>`
+      : `<span class="source-badge badge-hn">🟠 HN</span>`;
+
+    const footer = item.source === 'reddit'
+      ? `<span>▲ ${item.score||0}</span><span>💬 ${item.comments||0}</span>${item.author?`<span>u/${esc(item.author)}</span>`:''}`
+      : item.source === 'hn'
+      ? `<span>▲ ${item.score||0}</span><span>💬 ${item.comments||0}</span>${item.author?`<span>${esc(item.author)}</span>`:''}`
+      : item.publisher ? `<span>📰 ${esc(item.publisher)}</span>` : '';
+
+    return `<a class="card" href="${esc(item.url)}" target="_blank" rel="noopener">
+      <div class="card-top">
+        <div class="card-meta">${badge}</div>
+        <div class="card-time">${timeAgo(item.date)}</div>
+      </div>
+      <div class="card-title">${esc(item.title)}</div>
+      ${item.snippet ? `<div class="card-snippet">${esc(item.snippet)}${item.snippet.length>=180?'…':''}</div>` : ''}
+      ${footer ? `<div class="card-footer">${footer}</div>` : ''}
+    </a>`;
+  }).join('');
+}
+
+// ── Filter tabs ──────────────────────────────────────────────
+function filterTab(filter, el) {
+  currentFilter = filter;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  const filtered = filter === 'all' ? allMentions : allMentions.filter(m => m.source === filter);
+  renderCards(filtered);
+}
+
+// ── Loading state ────────────────────────────────────────────
+function showLoading() {
+  document.getElementById('cardsContainer').innerHTML = `
+    <div class="state-box">
+      <div class="spinner"></div>
+      <div class="state-title">Scanning the web…</div>
+      <div class="state-sub">Pulling from Google News, Reddit, and Hacker News. Trying multiple servers if needed.</div>
+      <div class="fetch-progress">
+        <div class="fp-item"><div class="fp-dot loading" id="fp-news"></div> News</div>
+        <div class="fp-item"><div class="fp-dot loading" id="fp-reddit"></div> Reddit</div>
+        <div class="fp-item"><div class="fp-dot loading" id="fp-hn"></div> HN</div>
+      </div>
+    </div>`;
+}
+
+// Watch source statuses and update loading dots
+function watchProgress() {
+  const int = setInterval(() => {
+    ['news','reddit','hn'].forEach(src => {
+      const el = document.getElementById('fp-' + src);
+      if (!el) return;
+      const s = sourceStatus[src];
+      el.className = 'fp-dot' + (s==='ok'?' ok':s==='err'?' err':' loading');
+    });
+    if (['news','reddit','hn'].every(s => sourceStatus[s] !== 'loading')) clearInterval(int);
+  }, 300);
+}
+
+// ── Main fetch ───────────────────────────────────────────────
+async function fetchAll() {
+  setStatus('loading', 'Fetching…');
+  document.getElementById('refreshBtn').disabled = true;
+  sourceStatus = { news: 'loading', reddit: 'loading', hn: 'loading' };
+  showLoading();
+  watchProgress();
+  document.getElementById('errorBanner').classList.remove('show');
+
+  const [news, reddit, hn] = await Promise.all([fetchNews(), fetchReddit(), fetchHN()]);
+
+  allMentions = [...news, ...reddit, ...hn].sort((a,b) => new Date(b.date)-new Date(a.date));
+
+  const now = Date.now();
+  try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: now, items: allMentions })); } catch(_) {}
+
+  document.getElementById('lastUpdated').textContent = fmtDate(now);
+  updateCounts();
+  startCountdown(now);
+
+  // Show error banner if any source failed
+  const failed = ['news','reddit','hn'].filter(s => sourceStatus[s]==='err');
+  if (failed.length) {
+    const srcNames = { news:'Google News', reddit:'Reddit', hn:'Hacker News' };
+    document.getElementById('errorBannerBody').innerHTML =
+      `<b>${failed.map(f=>srcNames[f]).join(', ')}</b> couldn't be reached. ` +
+      `Results shown are from the sources that did respond. Try hitting <b>Refresh Now</b> again — the external APIs are occasionally slow to respond.`;
+    document.getElementById('errorBanner').classList.add('show');
+  }
+
+  const allOk = failed.length === 0;
+  setStatus(allOk ? 'ok' : 'error', allOk ? 'Live' : `${3-failed.length}/3 sources`);
+  document.getElementById('refreshBtn').disabled = false;
+
+  const filtered = currentFilter === 'all'
+    ? allMentions : allMentions.filter(m => m.source === currentFilter);
+  renderCards(filtered);
+}
+
+// ── Boot ─────────────────────────────────────────────────────
+(function boot() {
+  // Detect file:// protocol — network fetches will be blocked by the browser
+  if (window.location.protocol === 'file:') {
+    document.getElementById('fileBanner').classList.add('show');
+    setStatus('error', 'Needs a server');
+    document.getElementById('refreshBtn').disabled = true;
+    document.getElementById('countdown').textContent = 'N/A';
+    return;
+  }
+
+  try {
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (raw) {
+      const { ts, items } = JSON.parse(raw);
+      allMentions = items || [];
+      document.getElementById('lastUpdated').textContent = fmtDate(ts);
+      updateCounts();
+      renderCards(allMentions);
+      setSrcStatus('news',   allMentions.some(m=>m.source==='news')   ? 'ok' : 'idle');
+      setSrcStatus('reddit', allMentions.some(m=>m.source==='reddit') ? 'ok' : 'idle');
+      setSrcStatus('hn',     allMentions.some(m=>m.source==='hn')     ? 'ok' : 'idle');
+      if (Date.now() - ts >= REFRESH_MS) {
+        fetchAll();
+      } else {
+        setStatus('ok', 'Live');
+        startCountdown(ts);
+      }
+    }
+  } catch(_) {}
+})();
+</script>
+</body>
+</html>
