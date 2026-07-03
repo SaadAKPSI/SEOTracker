@@ -224,8 +224,16 @@
 
 <!-- ===================== Masthead ===================== -->
 <header class="masthead">
-  <!-- Original crest seal (galley motif) — inspired by AKPsi heraldry, not a replica -->
-  <svg class="seal" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Alpha Kappa Psi seal">
+  <!--
+    OFFICIAL CREST: drop the fraternity's crest image into this folder named
+    "crest.png" (or crest.svg / crest.jpg) and it will appear here automatically.
+    Until then, the placeholder seal below is shown as a fallback.
+  -->
+  <img class="seal" id="crestImg" alt="Alpha Kappa Psi crest"
+       src="crest.png"
+       onerror="if(this.dataset.try!=='svg'){this.dataset.try='svg';this.src='crest.svg';}else if(this.dataset.try!=='jpg'){this.dataset.try='jpg';this.src='crest.jpg';}else{this.style.display='none';document.getElementById('crestFallback').style.display='block';}" />
+  <!-- Placeholder seal (galley motif) — inspired by AKPsi heraldry, not a replica -->
+  <svg class="seal" id="crestFallback" style="display:none" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Alpha Kappa Psi seal">
     <defs>
       <path id="arcTop" d="M38,100 A62,62 0 0 1 162,100" />
       <path id="arcBot" d="M42,104 A58,58 0 0 0 158,104" />
