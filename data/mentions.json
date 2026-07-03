@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Alpha Kappa Psi chapter raises $12,000 for local food bank",
+    "source": "Campus Times",
+    "date": "2026-06-30T14:20:00+00:00",
+    "url": "https://example.com/news/akpsi-food-bank-fundraiser",
+    "summary": "The Alpha Kappa Psi business fraternity completed a week-long philanthropy drive, raising over $12,000 in donations for the regional food bank.",
+    "sentiment": "positive"
+  },
+  {
+    "title": "Local university welcomes new Alpha Kappa Psi pledge class",
+    "source": "State Daily",
+    "date": "2026-06-28T09:05:00+00:00",
+    "url": "https://example.com/news/akpsi-new-pledge-class",
+    "summary": "Twenty-eight students were inducted into the professional business fraternity this spring, marking the chapter's largest pledge class to date.",
+    "sentiment": "positive"
+  },
+  {
+    "title": "Alpha Kappa Psi hosts regional professional development conference",
+    "source": "Business Student Journal",
+    "date": "2026-06-25T17:40:00+00:00",
+    "url": "https://example.com/news/akpsi-regional-conference",
+    "summary": "Members from twelve chapters gathered for workshops on leadership, networking, and career readiness at the annual regional conference.",
+    "sentiment": "neutral"
+  }
+]
