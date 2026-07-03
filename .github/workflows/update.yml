@@ -1,0 +1,46 @@
+name: Update AKPsi Mentions
+
+on:
+  schedule:
+    # Every 30 minutes (UTC). GitHub may delay scheduled runs under load.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:        # allow manual runs from the Actions tab
+  push:
+    branches: [ main ]      # refresh on pushes to main
+
+permissions:
+  contents: write           # required to commit updated data back to the repo
+
+concurrency:
+  group: update-mentions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch mentions
+        run: python scripts/fetch_mentions.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/mentions.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update mentions ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
