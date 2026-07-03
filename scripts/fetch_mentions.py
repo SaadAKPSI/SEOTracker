@@ -40,26 +40,36 @@ import requests
 
 _GNEWS = "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
 
-# Each query is URL-encoded. %22 = double-quote (forces exact phrase).
-_QUERIES = [
+# Each query is URL-encoded. %22 = double-quote, which forces Google to return
+# only articles that contain the EXACT phrase "Alpha Kappa Psi" somewhere in the
+# article (headline OR body). Because Google guarantees the phrase, these feeds
+# are "trusted": every returned item is a real body-level mention, so we accept
+# them without also requiring the phrase in the RSS title. The recency passes
+# (when:1y / when:6m / when:30d) surface the most recent coverage, which Google's
+# default relevance sort otherwise buries under older evergreen articles.
+_PHRASE_QUERIES = [
     '%22Alpha+Kappa+Psi%22',
+    '%22Alpha+Kappa+Psi%22+when:1y',      # last 12 months
+    '%22Alpha+Kappa+Psi%22+when:6m',      # last 6 months
+    '%22Alpha+Kappa+Psi%22+when:30d',     # last 30 days (fresh)
     '%22Alpha+Kappa+Psi%22+fraternity',
     '%22Alpha+Kappa+Psi%22+chapter',
-    '%22Alpha+Kappa+Psi%22+brotherhood',
     '%22Alpha+Kappa+Psi%22+philanthropy',
-    '%22Alpha+Kappa+Psi%22+business+fraternity',
-    '%22Alpha+Kappa+Psi%22+when:30d',   # recency-biased pass for fresh items
 ]
 
-FEEDS = [_GNEWS.format(q=q) for q in _QUERIES]
+# Feeds are (url, trusted). trusted=True → accept every returned item, because
+# Google already verified the exact phrase. Add non-trusted feeds (e.g. a broad
+# Google Alert or a topical query) and they'll pass through the relevance filter.
+FEEDS = [(_GNEWS.format(q=q), True) for q in _PHRASE_QUERIES]
 
-# Paste your own Google Alerts RSS feed URL(s) here for cleaner direct links.
-# See README for how to create one (free, no key). Example:
-#   FEEDS.append("https://www.google.com/alerts/feeds/00000.../00000...")
+# Paste your own Google Alerts RSS feed URL(s) here for cleaner DIRECT links.
+# A Google Alert built on "Alpha Kappa Psi" is also exact-phrase, so mark it
+# trusted. See README for how to create one (free, no key). Example:
+#   FEEDS.append(("https://www.google.com/alerts/feeds/00000.../00000...", True))
 
-# Allow the environment to inject feeds (comma-separated) without code edits.
+# Allow the environment to inject trusted feeds (comma-separated) without edits.
 if os.environ.get("AKPSI_FEEDS"):
-    FEEDS = [u.strip() for u in os.environ["AKPSI_FEEDS"].split(",") if u.strip()]
+    FEEDS = [(u.strip(), True) for u in os.environ["AKPSI_FEEDS"].split(",") if u.strip()]
 
 # Paths (resolved relative to repo root, one level above this script).
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -103,8 +113,10 @@ POSITIVE_WORDS = {
 
 NEGATIVE_WORDS = {
     "hazing", "lawsuit", "suspended", "suspension", "expelled", "banned",
-    "investigation", "misconduct", "scandal", "death", "died", "arrest",
-    "arrested", "charged", "violation", "probation", "controversy",
+    "investigation", "misconduct", "scandal", "death", "died", "dies",
+    "dead", "dying", "killed", "crash", "accident", "obituary", "tragic",
+    "tragedy", "arrest", "arrested", "charged", "embezzling", "embezzled",
+    "violation", "probation", "controversy", "sanctions", "sanction",
     "allegation", "allegations", "accused", "fine", "fined", "revoked",
     "disciplinary", "assault", "complaint", "dropped",
 }
@@ -230,10 +242,14 @@ def load_existing() -> list:
         return []
 
 
-def normalize_entry(entry, feed) -> dict | None:
+def normalize_entry(entry, feed, trusted: bool = False) -> dict | None:
     title = strip_html(getattr(entry, "title", ""))
     summary = strip_html(getattr(entry, "summary", getattr(entry, "description", "")))
-    if not is_relevant(title, summary):
+
+    # Trusted feeds (exact-phrase Google News / Google Alerts) already guarantee
+    # the phrase appears in the article body, so we skip the title-level check.
+    # Non-trusted feeds must still pass the relevance filter.
+    if not trusted and not is_relevant(title, summary):
         return None
 
     url = clean_google_url(getattr(entry, "link", "").strip())
@@ -259,12 +275,12 @@ def run() -> int:
     seen_urls = {item.get("url") for item in existing}
 
     new_items = []
-    for url in FEEDS:
+    for url, trusted in FEEDS:
         feed = fetch_feed(url)
         if not feed:
             continue
         for entry in getattr(feed, "entries", []):
-            item = normalize_entry(entry, feed)
+            item = normalize_entry(entry, feed, trusted=trusted)
             if item and item["url"] not in seen_urls:
                 seen_urls.add(item["url"])
                 new_items.append(item)
