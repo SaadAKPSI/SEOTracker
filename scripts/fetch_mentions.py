@@ -28,15 +28,34 @@ import requests
 # Configuration
 # --------------------------------------------------------------------------- #
 
-# Paste your Google Alerts RSS feed URL(s) here. See README for how to get one.
-# You can add any number of free/public RSS feeds to this list.
-FEEDS = [
-    # Example (replace with YOUR Google Alerts RSS URL):
-    # "https://www.google.com/alerts/feeds/00000000000000000000/0000000000000000000",
+# --------------------------------------------------------------------------- #
+# Feed sources (all free, no API keys)
+# --------------------------------------------------------------------------- #
+#
+# We query Google News RSS with several angles so coverage stays broad but
+# relevant. Google News returns the freshest matching articles per query, and
+# because the workflow runs every 30 minutes, newly published pieces get picked
+# up automatically. The relevance filter below drops anything off-topic, and
+# results are deduplicated by URL so overlapping queries don't create repeats.
 
-    # Google News RSS is free and requires no key. Query is URL-encoded.
-    "https://news.google.com/rss/search?q=%22Alpha+Kappa+Psi%22&hl=en-US&gl=US&ceid=US:en",
+_GNEWS = "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
+
+# Each query is URL-encoded. %22 = double-quote (forces exact phrase).
+_QUERIES = [
+    '%22Alpha+Kappa+Psi%22',
+    '%22Alpha+Kappa+Psi%22+fraternity',
+    '%22Alpha+Kappa+Psi%22+chapter',
+    '%22Alpha+Kappa+Psi%22+brotherhood',
+    '%22Alpha+Kappa+Psi%22+philanthropy',
+    '%22Alpha+Kappa+Psi%22+business+fraternity',
+    '%22Alpha+Kappa+Psi%22+when:30d',   # recency-biased pass for fresh items
 ]
+
+FEEDS = [_GNEWS.format(q=q) for q in _QUERIES]
+
+# Paste your own Google Alerts RSS feed URL(s) here for cleaner direct links.
+# See README for how to create one (free, no key). Example:
+#   FEEDS.append("https://www.google.com/alerts/feeds/00000.../00000...")
 
 # Allow the environment to inject feeds (comma-separated) without code edits.
 if os.environ.get("AKPSI_FEEDS"):
