@@ -4,6 +4,11 @@ on:
   schedule:
     # Every 30 minutes (UTC). GitHub may delay scheduled runs under load.
     - cron: "*/30 * * * *"
+    # Guaranteed once-daily run at 13:00 UTC as a heartbeat, so the tracker
+    # still updates every day even if the 30-minute runs are throttled. This
+    # daily commit also keeps the scheduled workflow from being auto-disabled
+    # (public repos disable schedules after 60 days of no activity).
+    - cron: "0 13 * * *"
   workflow_dispatch:        # allow manual runs from the Actions tab
   push:
     branches: [ main ]      # refresh on pushes to main
