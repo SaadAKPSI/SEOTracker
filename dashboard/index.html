@@ -20,9 +20,9 @@
     --ink: #1c2740;
     --muted: #6b7488;
     /* Relevance palette (replaces sentiment): how central AKPsi is to a story */
-    --rel-high: #a8842f;    /* gold-deep  — article is about AKPsi */
-    --rel-medium: #2f5d8a;  /* steel blue — AKPsi featured among others */
-    --rel-low: #8b93a4;     /* muted gray — passing / incidental mention */
+    --rel-high: #a8842f;    /* gold-deep: article is about AKPsi */
+    --rel-medium: #2f5d8a;  /* steel blue: AKPsi featured among others */
+    --rel-low: #8b93a4;     /* muted gray: passing / incidental mention */
     --shadow: 0 6px 22px rgba(10,34,64,.10);
     --serif: "Libre Baskerville", Georgia, "Times New Roman", serif;
     --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -112,6 +112,7 @@
     font-weight: 700;
   }
   .section-label .sub { color: var(--muted); font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; }
+  .section-label .data-updated { color: var(--muted); font-size: .78rem; margin-top: 6px; opacity: .9; }
   .sync-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--rel-high); box-shadow: 0 0 0 0 rgba(168,132,47,.5); animation: pulse 2.4s infinite; }
   @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(168,132,47,.5);} 70%{box-shadow:0 0 0 7px rgba(168,132,47,0);} 100%{box-shadow:0 0 0 0 rgba(168,132,47,0);} }
 
@@ -280,12 +281,13 @@
   <div class="section-label">
     <h2>Mention Tracker</h2>
     <span class="sub"><span class="sync-dot"></span><span id="synced">Monitoring coverage across the web</span></span>
+    <div class="data-updated"><span id="dataUpdated"></span></div>
   </div>
 
   <div class="legend">
-    <span class="key"><span class="swatch sw-high"></span>High relevance — about Alpha Kappa Psi</span>
-    <span class="key"><span class="swatch sw-medium"></span>Medium — AKPsi featured among others</span>
-    <span class="key"><span class="swatch sw-low"></span>Low — passing mention</span>
+    <span class="key"><span class="swatch sw-high"></span>High relevance: about Alpha Kappa Psi</span>
+    <span class="key"><span class="swatch sw-medium"></span>Medium: AKPsi featured among others</span>
+    <span class="key"><span class="swatch sw-low"></span>Low: passing mention</span>
   </div>
 
   <div class="stats" id="stats"></div>
@@ -341,6 +343,7 @@
     stats: document.getElementById("stats"),
     updated: document.getElementById("updated"),
     synced: document.getElementById("synced"),
+    dataUpdated: document.getElementById("dataUpdated"),
     search: document.getElementById("search"),
     relevance: document.getElementById("relevance"),
     sort: document.getElementById("sort"),
@@ -350,7 +353,7 @@
     for (const path of DATA_CANDIDATES) {
       try {
         const res = await fetch(path + "?t=" + Date.now(), { cache: "no-store" });
-        if (res.ok) return await res.json();
+        if (res.ok) return { data: await res.json(), lastModified: res.headers.get("last-modified") };
       } catch (_) {}
     }
     throw new Error("mentions.json not found");
@@ -434,17 +437,21 @@
 
   async function refresh(initial) {
     try {
-      const data = await loadData();
+      const { data, lastModified } = await loadData();
       const prev = all.length;
       all = Array.isArray(data) ? data : [];
       const latest = all.reduce((mx,m)=>Math.max(mx,new Date(m.date).getTime()||0),0);
       els.updated.textContent = latest ? "latest mention " + new Date(latest).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}) : "";
+      const dataTime = lastModified ? new Date(lastModified) : (latest ? new Date(latest) : null);
+      els.dataUpdated.textContent = (dataTime && !isNaN(dataTime.getTime()))
+        ? "Dataset last updated " + dataTime.toLocaleString(undefined,{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"})
+        : "";
       const now = new Date().toLocaleTimeString(undefined,{hour:"2-digit",minute:"2-digit"});
       const added = !initial && all.length > prev ? ` · +${all.length-prev} new` : "";
       els.synced.textContent = `Last synced ${now}${added}`;
       renderStats(); render();
     } catch(e) {
-      if (initial) els.grid.innerHTML = '<div class="empty">Awaiting the next update — mentions will appear here shortly.</div>';
+      if (initial) els.grid.innerHTML = '<div class="empty">Awaiting the next update. Mentions will appear here shortly.</div>';
     }
   }
 
