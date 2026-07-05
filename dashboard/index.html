@@ -19,9 +19,10 @@
     --paper: #ffffff;
     --ink: #1c2740;
     --muted: #6b7488;
-    --pos: #2e7d5b;
-    --neu: #64748b;
-    --neg: #b23b3b;
+    /* Relevance palette (replaces sentiment): how central AKPsi is to a story */
+    --rel-high: #a8842f;    /* gold-deep  — article is about AKPsi */
+    --rel-medium: #2f5d8a;  /* steel blue — AKPsi featured among others */
+    --rel-low: #8b93a4;     /* muted gray — passing / incidental mention */
     --shadow: 0 6px 22px rgba(10,34,64,.10);
     --serif: "Libre Baskerville", Georgia, "Times New Roman", serif;
     --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -56,7 +57,7 @@
     background: repeating-linear-gradient(90deg, var(--gold) 0 22px, var(--navy-2) 22px 26px);
     opacity: .5;
   }
-  .seal { width: 118px; height: 118px; margin: 0 auto 14px; display: block; }
+  .seal { width: 118px; height: 118px; margin: 0 auto 14px; display: block; border-radius: 50%; }
 
   .wordmark { display: flex; align-items: center; justify-content: center; gap: 18px; }
   .wordmark .rule { height: 1px; width: 46px; background: linear-gradient(90deg, transparent, var(--gold)); }
@@ -102,10 +103,7 @@
   /* ------------------------------------------------ Body */
   .wrap { max-width: 1120px; margin: 0 auto; padding: 34px 20px 60px; }
 
-  .section-label {
-    text-align: center;
-    margin-bottom: 26px;
-  }
+  .section-label { text-align: center; margin-bottom: 26px; }
   .section-label h2 {
     font-family: var(--serif);
     font-size: 1.5rem;
@@ -114,8 +112,16 @@
     font-weight: 700;
   }
   .section-label .sub { color: var(--muted); font-size: .9rem; display: inline-flex; align-items: center; gap: 8px; }
-  .sync-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--pos); box-shadow: 0 0 0 0 rgba(46,125,91,.5); animation: pulse 2.4s infinite; }
-  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(46,125,91,.5);} 70%{box-shadow:0 0 0 7px rgba(46,125,91,0);} 100%{box-shadow:0 0 0 0 rgba(46,125,91,0);} }
+  .sync-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--rel-high); box-shadow: 0 0 0 0 rgba(168,132,47,.5); animation: pulse 2.4s infinite; }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(168,132,47,.5);} 70%{box-shadow:0 0 0 7px rgba(168,132,47,0);} 100%{box-shadow:0 0 0 0 rgba(168,132,47,0);} }
+
+  /* Relevance legend */
+  .legend { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: -8px 0 24px; font-size: .78rem; color: var(--muted); }
+  .legend .key { display: inline-flex; align-items: center; gap: 7px; }
+  .legend .swatch { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+  .sw-high { background: var(--rel-high); }
+  .sw-medium { background: var(--rel-medium); }
+  .sw-low { background: var(--rel-low); }
 
   /* Stats */
   .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 26px; }
@@ -129,8 +135,10 @@
   }
   .stat .num { font-family: var(--serif); font-size: 1.9rem; font-weight: 700; color: var(--navy); line-height: 1.1; }
   .stat .lbl { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-top: 4px; }
-  .stat.pos .num { color: var(--pos); }
-  .stat.neg .num { color: var(--neg); }
+  .stat.high { border-top-color: var(--rel-high); }
+  .stat.high .num { color: var(--rel-high); }
+  .stat.medium { border-top-color: var(--rel-medium); }
+  .stat.medium .num { color: var(--rel-medium); }
 
   /* Toolbar */
   .toolbar {
@@ -167,10 +175,10 @@
     transition: transform .14s ease, box-shadow .14s ease, border-color .14s;
     overflow: hidden;
   }
-  .card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--neu); }
-  .card.s-positive::before { background: var(--pos); }
-  .card.s-negative::before { background: var(--neg); }
-  .card.s-neutral::before  { background: var(--navy); }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--rel-low); }
+  .card.r-high::before   { background: var(--rel-high); }
+  .card.r-medium::before { background: var(--rel-medium); }
+  .card.r-low::before    { background: var(--rel-low); }
   .card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(10,34,64,.16); border-color: var(--gold); }
 
   .card-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
@@ -192,9 +200,9 @@
   .badges { display: flex; gap: 8px; flex-wrap: wrap; }
   .badge { font-size: .66rem; text-transform: uppercase; letter-spacing: .07em; padding: 4px 10px; border-radius: 4px; font-weight: 700; }
   .badge.new { background: var(--navy); color: var(--gold-soft); }
-  .b-positive { background: rgba(46,125,91,.12); color: var(--pos); }
-  .b-neutral  { background: rgba(100,116,139,.14); color: var(--neu); }
-  .b-negative { background: rgba(178,59,59,.12); color: var(--neg); }
+  .b-high   { background: rgba(168,132,47,.14); color: var(--rel-high); }
+  .b-medium { background: rgba(47,93,138,.14);  color: var(--rel-medium); }
+  .b-low    { background: rgba(139,147,164,.16); color: var(--rel-low); }
   .readmore { font-size: .82rem; font-weight: 600; color: var(--gold-deep); text-decoration: none; white-space: nowrap; }
   .readmore:hover { text-decoration: underline; }
 
@@ -224,15 +232,9 @@
 
 <!-- ===================== Masthead ===================== -->
 <header class="masthead">
-  <!--
-    OFFICIAL CREST: drop the fraternity's crest image into this folder named
-    "crest.png" (or crest.svg / crest.jpg) and it will appear here automatically.
-    Until then, the placeholder seal below is shown as a fallback.
-  -->
   <img class="seal" id="crestImg" alt="Alpha Kappa Psi crest"
        src="crest.png"
        onerror="if(this.dataset.try!=='svg'){this.dataset.try='svg';this.src='crest.svg';}else if(this.dataset.try!=='jpg'){this.dataset.try='jpg';this.src='crest.jpg';}else{this.style.display='none';document.getElementById('crestFallback').style.display='block';}" />
-  <!-- Placeholder seal (galley motif) — inspired by AKPsi heraldry, not a replica -->
   <svg class="seal" id="crestFallback" style="display:none" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Alpha Kappa Psi seal">
     <defs>
       <path id="arcTop" d="M38,100 A62,62 0 0 1 162,100" />
@@ -246,23 +248,15 @@
     <text fill="#c4a24a" font-family="Libre Baskerville, serif" font-size="11" letter-spacing="2.5" text-anchor="middle">
       <textPath href="#arcBot" startOffset="50%">EST. 1904</textPath>
     </text>
-    <!-- galley -->
     <g transform="translate(100,96)">
-      <!-- waves -->
       <path d="M-46,22 q11,-8 22,0 q11,8 22,0 q11,-8 22,0 q11,8 22,0" fill="none" stroke="#c4a24a" stroke-width="2.4" stroke-linecap="round" opacity=".85"/>
       <path d="M-46,30 q11,-8 22,0 q11,8 22,0 q11,-8 22,0 q11,8 22,0" fill="none" stroke="#c4a24a" stroke-width="1.6" stroke-linecap="round" opacity=".5"/>
-      <!-- hull -->
       <path d="M-40,10 L40,10 L28,24 L-28,24 Z" fill="#c4a24a"/>
-      <!-- mast -->
       <rect x="-2" y="-40" width="4" height="50" fill="#c4a24a"/>
-      <!-- sail -->
       <path d="M2,-38 L34,-8 L2,-8 Z" fill="#e7d9b0"/>
       <path d="M-2,-38 L-34,-8 L-2,-8 Z" fill="#c4a24a"/>
-      <!-- AKPsi on sail -->
       <text x="16" y="-16" fill="#0a2240" font-family="Libre Baskerville, serif" font-size="10" font-weight="700" text-anchor="middle">AKΨ</text>
-      <!-- pennant -->
       <path d="M2,-40 L20,-44 L2,-48 Z" fill="#c4a24a"/>
-      <!-- stars -->
       <circle cx="-52" cy="-14" r="1.8" fill="#c4a24a"/>
       <circle cx="52" cy="-14" r="1.8" fill="#c4a24a"/>
     </g>
@@ -288,6 +282,12 @@
     <span class="sub"><span class="sync-dot"></span><span id="synced">Monitoring coverage across the web</span></span>
   </div>
 
+  <div class="legend">
+    <span class="key"><span class="swatch sw-high"></span>High relevance — about Alpha Kappa Psi</span>
+    <span class="key"><span class="swatch sw-medium"></span>Medium — AKPsi featured among others</span>
+    <span class="key"><span class="swatch sw-low"></span>Low — passing mention</span>
+  </div>
+
   <div class="stats" id="stats"></div>
 
   <div class="toolbar">
@@ -295,15 +295,16 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
       <input id="search" type="search" placeholder="Search title, source, or summary…" />
     </div>
-    <select id="sentiment">
-      <option value="all">All sentiment</option>
-      <option value="positive">Positive</option>
-      <option value="neutral">Neutral</option>
-      <option value="negative">Negative</option>
+    <select id="relevance">
+      <option value="all">All relevance</option>
+      <option value="high">High relevance</option>
+      <option value="medium">Medium relevance</option>
+      <option value="low">Low relevance</option>
     </select>
     <select id="sort">
       <option value="newest">Newest first</option>
       <option value="oldest">Oldest first</option>
+      <option value="relevance">Highest relevance</option>
     </select>
   </div>
 
@@ -331,7 +332,8 @@
   const DATA_CANDIDATES = ["../data/mentions.json", "data/mentions.json", "./mentions.json"];
   const RECENT_MS = 7 * 24 * 60 * 60 * 1000;
   const REFRESH_MS = 3 * 60 * 1000;  // auto re-check for new mentions every 3 minutes
-  const AVATAR_COLORS = ["#0a2240","#143059","#a8842f","#2e7d5b","#7a5c1e","#3d5a80","#6b4e2e","#274060"];
+  const AVATAR_COLORS = ["#0a2240","#143059","#a8842f","#2f5d8a","#7a5c1e","#3d5a80","#6b4e2e","#274060"];
+  const REL_ORDER = { high: 3, medium: 2, low: 1 };
 
   let all = [];
   const els = {
@@ -340,7 +342,7 @@
     updated: document.getElementById("updated"),
     synced: document.getElementById("synced"),
     search: document.getElementById("search"),
-    sentiment: document.getElementById("sentiment"),
+    relevance: document.getElementById("relevance"),
     sort: document.getElementById("sort"),
   };
 
@@ -358,6 +360,27 @@
   function fmtDate(iso) { const d = new Date(iso); return isNaN(d) ? (iso||"") : d.toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"}); }
   const isNew = iso => { const d = new Date(iso); return !isNaN(d) && (Date.now() - d.getTime()) < RECENT_MS; };
 
+  // Client-side fallback: mirror of scripts/fetch_mentions.py classify_relevance,
+  // used only when a data entry predates the relevance field (graceful during rollout).
+  const MEMORIAL_WORDS = ["obituary","obituaries","funeral","memorial","in memoriam","passed away","passes away","passing of","celebration of life","tribute","condolence","visitation","crematory","cremation","dies","died","dead","death","killed","fatal","crash","accident","plunge","remembering"];
+  const FRAT_TITLE_WORDS = ["fraternit","sororit","greek","brotherhood","chapter","pledge","rush","panhellenic","interfraternity","colony","thon","little 500"];
+  const FEATURE_TITLE_WORDS = ["spotlight","alumni","alumnus","alumna","graduate","profile","best & brightest","best and brightest","honoree","scholarship","leadership","internship"];
+  const TITLE_PHRASE_RE = /alpha\s+kappa\s+psi|\bak[\s\-]?psi\b/i;
+  function classifyRelevance(title, summary) {
+    const t = (title || "").toLowerCase();
+    const blob = ((title || "") + " " + (summary || "")).toLowerCase();
+    if (MEMORIAL_WORDS.some(w => blob.includes(w))) return "low";
+    if (TITLE_PHRASE_RE.test(t)) return "high";
+    if (FRAT_TITLE_WORDS.some(w => t.includes(w)) || FEATURE_TITLE_WORDS.some(w => t.includes(w))) return "medium";
+    return "low";
+  }
+  function relOf(m) {
+    const r = (m.relevance || "").toLowerCase();
+    if (r === "high" || r === "medium" || r === "low") return r;
+    return classifyRelevance(m.title, m.summary);
+  }
+  const relLabel = { high: "High relevance", medium: "Medium relevance", low: "Low relevance" };
+
   function avatar(source) {
     const s = (source || "?").trim();
     const letter = s.charAt(0).toUpperCase() || "?";
@@ -367,24 +390,28 @@
 
   function render() {
     const q = els.search.value.trim().toLowerCase();
-    const sf = els.sentiment.value, dir = els.sort.value;
+    const rf = els.relevance.value, dir = els.sort.value;
     let items = all.filter(m => {
       const txt = !q || (m.title||"").toLowerCase().includes(q) || (m.source||"").toLowerCase().includes(q) || (m.summary||"").toLowerCase().includes(q);
-      return txt && (sf==="all" || m.sentiment===sf);
+      return txt && (rf==="all" || relOf(m)===rf);
     });
-    items.sort((a,b) => { const da=new Date(a.date).getTime()||0, db=new Date(b.date).getTime()||0; return dir==="newest"?db-da:da-db; });
+    if (dir === "relevance") {
+      items.sort((a,b) => { const r = (REL_ORDER[relOf(b)]||0)-(REL_ORDER[relOf(a)]||0); return r!==0 ? r : (new Date(b.date).getTime()||0)-(new Date(a.date).getTime()||0); });
+    } else {
+      items.sort((a,b) => { const da=new Date(a.date).getTime()||0, db=new Date(b.date).getTime()||0; return dir==="newest"?db-da:da-db; });
+    }
     if (!items.length) { els.grid.innerHTML = '<div class="empty">No mentions match your filters.</div>'; return; }
     els.grid.innerHTML = items.map(m => {
-      const sent = ["positive","neutral","negative"].includes(m.sentiment) ? m.sentiment : "neutral";
+      const rel = relOf(m);
       const fresh = isNew(m.date);
-      return `<article class="card s-${sent}">
+      return `<article class="card r-${rel}">
         <div class="card-head">${avatar(m.source)}
           <div class="src-meta"><div class="src-name">${esc(m.source||"Unknown")}</div><div class="src-date">${fmtDate(m.date)}</div></div>
         </div>
         <h3><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.title)}</a></h3>
         <p class="summary">${esc(m.summary||"")}</p>
         <div class="card-foot">
-          <div class="badges">${fresh?'<span class="badge new">New</span>':""}<span class="badge b-${sent}">${sent}</span></div>
+          <div class="badges">${fresh?'<span class="badge new">New</span>':""}<span class="badge b-${rel}">${esc(relLabel[rel])}</span></div>
           <a class="readmore" href="${esc(m.url)}" target="_blank" rel="noopener">Read source →</a>
         </div>
       </article>`;
@@ -392,9 +419,16 @@
   }
 
   function renderStats() {
-    const total=all.length, pos=all.filter(m=>m.sentiment==="positive").length,
-      neg=all.filter(m=>m.sentiment==="negative").length, fresh=all.filter(m=>isNew(m.date)).length;
-    const cards=[{n:total,l:"Total mentions"},{n:fresh,l:"New (7 days)",c:""},{n:pos,l:"Positive",c:"pos"},{n:neg,l:"Negative",c:"neg"}];
+    const total=all.length,
+      high=all.filter(m=>relOf(m)==="high").length,
+      medium=all.filter(m=>relOf(m)==="medium").length,
+      fresh=all.filter(m=>isNew(m.date)).length;
+    const cards=[
+      {n:total,l:"Total mentions"},
+      {n:fresh,l:"New (7 days)"},
+      {n:high,l:"High relevance",c:"high"},
+      {n:medium,l:"Medium relevance",c:"medium"},
+    ];
     els.stats.innerHTML = cards.map(c=>`<div class="stat ${c.c||""}"><div class="num">${c.n}</div><div class="lbl">${c.l}</div></div>`).join("");
   }
 
@@ -414,10 +448,10 @@
     }
   }
 
-  ["input","change"].forEach(ev => { els.search.addEventListener(ev,render); els.sentiment.addEventListener(ev,render); els.sort.addEventListener(ev,render); });
+  ["input","change"].forEach(ev => { els.search.addEventListener(ev,render); els.relevance.addEventListener(ev,render); els.sort.addEventListener(ev,render); });
 
   refresh(true);
-  setInterval(() => refresh(false), REFRESH_MS);           // poll for new mentions
+  setInterval(() => refresh(false), REFRESH_MS);
   document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(false); });
 </script>
 </body>
