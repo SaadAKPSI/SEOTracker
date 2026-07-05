@@ -5,7 +5,7 @@
     "date": "2026-06-26T20:38:48+00:00",
     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcTRiUG52NzhZZ3VqX2lSbHhsbzBJVy1FdjBNbUxyaXhkeGU2elA5WVVqaTNOT09OZlRLbkgxN0sxVTkzMzZYV2stbGM5emF4QVdSWVF2UFg5RVctUU9SZE56OEtpbTN2dzZMYk9jVy1tWXNueWRDOFYxZXRKVXhQUmtYMTRvLUtwcVJTcWdWLXJhVXJsVGs1NzZEMmVxZEFzU3NQQjBNZVJ1WmVhU3B3aG9QaEJtZFBhcXBORHlsaTk5T2k0NjRRUXRJTHJ3dmJJMnc?oc=5",
     "summary": "UD POSCIR Alumni Spotlight Jack Mullarkey International Relations University of Delaware",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Raymond J. Rausch Obituary (2026) - Milwaukee, WI - Heritage Funeral Home – East Side - Farwell",
@@ -13,7 +13,7 @@
     "date": "2026-06-26T19:25:48+00:00",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ1R3d3VhY25kMmNUYjZGUC1vaE5LNUxmOVdXNW03QnZtdmp4d0xxUHFEZmlRT2NIajJtcTlFMFl0ekpUWUdGenhUYnlIQUJDM1F0Z3lpMFcyYWtNekJMRzlCT3dLQ3cwbUpGZU1fS3Z6Qk1hb0xsVVk4Z3V5RU1rdm5FUQ?oc=5",
     "summary": "Raymond J. Rausch Obituary (2026) - Milwaukee, WI - Heritage Funeral Home – East Side - Farwell Legacy obituary",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "My Favorite Beverages At Penn State (So Far)",
@@ -21,7 +21,7 @@
     "date": "2026-06-26T17:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlVqcElFaFExcmdEV2I3WHc4QXhrYU1nMWV2RkI4Vm8xaUJTN2JTRk9mUEFIRXA1b29JSUpUUWVPalVEaGt5SkVFMElvSTViX3VIQnp1TXpWSjA3VTF3X3U5S3JwUFZzYS1oU3dDQ0J4S1MtU3NCb1BYUGJLZ1R1N2hOcHdIckU?oc=5",
     "summary": "My Favorite Beverages At Penn State (So Far) Her Campus",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Timothy Thomas Obituary (2026)",
@@ -29,7 +29,7 @@
     "date": "2026-06-25T16:41:17+00:00",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNENGU3lBWFZuUHVVdnZkWVA1V1lJZWl1ZERHV3VaQUNneXZkTlNCcXVFemZQTC1kS2RVYzJlSm5pTVhVTEZORlhsMWwxd09lX1VMNVFSZkJfZEZLMGtIVjkxWVRtSldWLUs2cE0tZ3paV1ZrWFJSaDN6RmVoZ29OYnZZaw?oc=5",
     "summary": "Timothy Thomas Obituary (2026) Legacy obituary",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Dr. Roger Carl Schoenfeldt",
@@ -37,7 +37,7 @@
     "date": "2026-06-24T10:22:21+00:00",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5LNHBSS1Q5OFhtbDd5ejllQU14bVNKbmR2QkE1dWc2SWlzaHhFb21hZEdwN3U2RENEQ1FpblF3TXJ2MHloLUhSS1EybXBwUUp6NkZfczRVYTI3UXBhaEtiekljUGtjYXpHeUxJQzYyOUhpdw?oc=5",
     "summary": "Dr. Roger Carl Schoenfeldt Ellsworth County Independent Reporter",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Jerome Rodeman Obituary Jun 23, 2026",
@@ -45,7 +45,7 @@
     "date": "2026-06-23T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBvMzY2Zks5ejA1bVE2TlVzdGxsSlFIem8zS25DbVBiR05RZktvN1hwV1l3VDQxSWluMmhjVnhZNHVxbFlaazl2a0dsb0xpQ3R2MUIyZExLVEt1ai1yNlZienM5bWIwMXZuRGRvdg?oc=5",
     "summary": "Jerome Rodeman Obituary Jun 23, 2026 Walker Funeral Homes & Crematory",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Peter R. Hawkins Obituary (2026) - Clawson, MI - Lynch & Sons Funeral Directors - Clawson",
@@ -53,7 +53,7 @@
     "date": "2026-06-22T19:12:44+00:00",
     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQX3RuTWFSWW5OVkZlNVRuSVhtU0VHbE1zQ0pqbDV3dm5GQVhtT1k2TW5UVUR2dTlMSXE3RF9WT1BZajY1ZDcyeVhhaFJPMktaV1dlOHg0QV9VUGJGT25RUl9IbTFxZ01fbVI3R2FPU2NjaEd6M2JxUTVwc192VE0zMHpn?oc=5",
     "summary": "Peter R. Hawkins Obituary (2026) - Clawson, MI - Lynch & Sons Funeral Directors - Clawson Legacy obituary",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "What’s next for Alabama’s US Senate race? ‘Trusted ally’ for Trump vs. ‘change’ the climate",
@@ -61,7 +61,7 @@
     "date": "2026-06-17T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVWRCbFVDNWQwZDZ1SnRYNmVqOTFjazU4RHZzUlZua25QMHZjRHFyd2JEeXB2eGc0TWdVSU56TjJrNEMtMnNLb1V2Y3dRc3FmQW1tZWFaWmNDUDg2NENoeWg3QVZtX2M1UHRuRmE0dzBBWVZWZ1EzeWpWSGFmam10TVNwemtpUTd5d3NjeDlvSS1VRUg4UjJMN2pLMUxOZ0s1N255UzlSY1p3Z3dMSWlWWThxRXJubHo0LXMzddIB0AFBVV95cUxPcnBxYzFCeU5qN2hhNVhfVWswWGhNUmk4YnVzcDB4VXFMdW5jNDVUUDdtZ3R0cVBSeHRqVExwSlRRWlMtNEp6UVpMUElEb1NTXzg4bFN6NTNLeEpCRHlqZk96MFZ0dFNEUGlXWWxnN0w1TU8yYjNreGJWQmdzWXJmVjhhUXd6VXh4OFltYjhCYVZMTW8yT2dvdzZKOEM0UG5OcEJIUzF3ZXdvNFlzX1dNMUVHajFOeG41UUttNUpvQkR1azJGcHhZbzFRSUFyYkFB?oc=5",
     "summary": "What’s next for Alabama’s US Senate race? ‘Trusted ally’ for Trump vs. ‘change’ the climate AL.com",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Richard Dale Featheringham Obituary | Clark Funeral Chapel & Cremation Service | Mount Pleasant, MI",
@@ -69,7 +69,7 @@
     "date": "2026-06-16T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcm0tUk9ZTHJvTlFHVHlzX2VtdmhQTUw3aktsM0RCR0FXdUNNa2YydDJaT09YYklTY21XYkc5VENFdVRnNEduTThTN3ZxSFhUS0drelRGYUlNcVM0R0VnMzFiQ3JxUldGZEtzcGpWc3RKZWtxUW8xTVlXVmpiVWI4VElmQQ?oc=5",
     "summary": "Richard Dale Featheringham Obituary | Clark Funeral Chapel & Cremation Service | Mount Pleasant, MI Tribute Archive",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Guerrera finds community and leadership through Alpha Kappa Psi",
@@ -77,7 +77,7 @@
     "date": "2026-06-12T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaFplT09XWW5iVy1jUFhwQUQtSzFHNUpBTXJYRVdYZ01hTEZENWdsUmdyRTdDSlNBZE93NkxlVVlES2FvMGozU1Jmb3R4VVFsVE4yUDVDZTcwczFKd3B1UFFUTm9RV25TeTJaYUNYSXZvNUhHZ1VpcmFlM3IwNC00WTJZZWozaEkteEUtSFJJMnMtOFdq?oc=5",
     "summary": "Guerrera finds community and leadership through Alpha Kappa Psi Slippery Rock University",
-    "sentiment": "positive"
+    "relevance": "high"
   },
   {
     "title": "Graduate Spotlight: Preman Rami | 2026 | News & Stories",
@@ -85,7 +85,7 @@
     "date": "2026-06-05T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0teTRDMlFfUG10YmdWMmJObFlhc2pYbEJCQWNpdTNjNnZiV1Z4LUZSYlk2TUQ1VlpZTnFZSkMzczJSazFsTUlrMk94VER3ekExdVdoNGdfM1BKNWRvSk5OSFE0SVR6cnlrQTNKUEFmZnQ4cVdwVlVXaTkzZnY0Zw?oc=5",
     "summary": "Graduate Spotlight: Preman Rami | 2026 | News & Stories Seattle University",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "William Laundon Obituary - Apex, NC",
@@ -93,7 +93,7 @@
     "date": "2026-06-04T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQi1XWlRkTjBGUzctME5ELVdLejJxUEpCdDlRNDFnbzVKb284R2xPVk43NWxEQ3puQVlkamVEQm8yaVI3Y1BxTVZsRDUtYjFoWmUtZlZiM2ZUMDc3cEhpeXRPYmdKTlRxd0tlUWoxN3R1VmM4UDR3VkRfUHJiOWdjLQ?oc=5",
     "summary": "William Laundon Obituary - Apex, NC Dignity Memorial",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "How Dilan Mistry built NativeFour through Chapman connections.",
@@ -101,7 +101,7 @@
     "date": "2026-04-27T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSmJRdDN5NEc0LXc5emtlQ1k3bFVhRDZwYlpVenA4b1JzVUpSVmtVYkhzVl9pNE9hM2R0UXE4NEZDSDlMSE1pOGl2cEJYMWhUTU9ITlU1cWxvLTlReWhweVZMVk9tSGljVVp4d2ZuMExSQmM2V2tCU1hqUVFoNXdCUGtaTXk5RWNjbVg0Vw?oc=5",
     "summary": "How Dilan Mistry built NativeFour through Chapman connections. Chapman Newsroom",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Central Michigan University student charged with embezzling $28K from baseball club, frat",
@@ -109,7 +109,7 @@
     "date": "2026-04-13T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQV3U5MlR3eVBzWkNBWEN5UUtQclh6bVR1cnJLUkI1SG14UzJMaUFpbjFRa25YTlVrZ0w2bmpTaTlhTXd5TERHcUNoT0UxMDlMRGpNcERRNTJ2YTRMUExUcTBXcy1tTkZLaEY1cVhsUGh3QndHQlpKcV9BUFR3b3lydFFIa09xOC1maUFHNWw1QXltWUVSWFF0Y3NjaTlMWktrQWlPVmlNVXZYZE1BZlN4dDhDYlFyMVBFeHF4LVB1UHl2NkdxeUxSd084MU9Id01uYlZJYTNNMl9OTFdD0gHwAUFVX3lxTFBrVXN6Rmc0WkdfbDE0RF9haDJnX0VMMENBWjZYUHBuVHpPeDgwSEcyQzhHOVV2OG9RSjh3RlJ1YVN5OFd3a3ZHZk9XbU5OUUt3MDAyN0hFLWxjSXpSZXoyS05ZTm5qTWxtZnh5RHhDZVpucG9vUHNjcEV3T3NfQjNZTWpxUXdRbElLc0VaVkJLbWJlZks2MEJfM3BwUXFFTldDMkhVT05oTzhvTmlkV2tRN0M5RWZZbDcxOVNvNmpGeC16TllpVWMybEk2SzZBT0FmRzBnQ2M3SFBMbE55OWRGdDRuMTJRallyV0RMUHpaWg?oc=5",
     "summary": "Central Michigan University student charged with embezzling $28K from baseball club, frat MLive.com",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "2026 Best & Brightest Business Major: Maddie Shannon, Wake Forest University",
@@ -117,7 +117,7 @@
     "date": "2026-04-03T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOLWxkRDdjUV9ERzFuN0dSMno4TWZCRmhJX1pZa1N3bzBxTkhNcUlUUE5vMEpBdnhuOTNKLXVHSzRybFdWb3I3V3dab0ozc3M4UVZyZ25uRXpRb3JsSmdLSURrNjdFOEUyQ0FpUWQzajlEQXZuNVVJelFKZDBwWjJubDJXWVYyUThFaHRRcmREY1gzd1JGQmdtRG9VOTF4eUJTb0pRandVSTJBSUtBMllFLV80WjhZMlRCX0Nha2xpcw?oc=5",
     "summary": "2026 Best & Brightest Business Major: Maddie Shannon, Wake Forest University Poets&Quants for Undergrads",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "PHOTOS: Little 500 racers compete in men's time trials",
@@ -125,7 +125,7 @@
     "date": "2026-04-01T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRG03RDJEdng2aWlmaERuSlZyaTVEZWhVekdjMjVMX0Rnckw2UjJGSVdaMFZpWkkyU0FFZTh0cURPRE40MXNkQk9QNWEwdGVLZUVGY0lWYWVMck1xQWp0d045NGtzbWJpU0hUNmZBUVk4eDhzLUpEZU1KTGtMXzA0LXN0X2g?oc=5",
     "summary": "PHOTOS: Little 500 racers compete in men's time trials Indiana Daily Student",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "PHOTOS | The story in the stands",
@@ -133,7 +133,7 @@
     "date": "2026-02-27T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMVFDbGVtdWhhMDdRa2VIdXE0cml6ZlBLTlFEbjlpcVlsLXNCVEZDZDJjY2ZCNVFGWURqRTdDZF9pRVpnbGExLWgtdG1reEc3YWF5dTlXMERMVnVLZDAxNkJQRWp0MGJ5T1NXRWE0VDlacjF6b3ZQRmc0Nklmanc2VU9nVmJMWVVjdWhHSTY3ZER6ZzlUekE2LUxDYTkycWpOOXRNTDZVMnp0RVNqOXZWRjdycUktVGtKN3lz?oc=5",
     "summary": "PHOTOS | The story in the stands The Daily Collegian",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "ATO/ZTA Leads Top THON 2026 Fundraisers",
@@ -141,7 +141,7 @@
     "date": "2026-02-22T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVzF5bWljc1dWMTNOUzdLM3Zic256bU5ENEJCQUR5LWxHMkw2cmtKUEtJZjZ0VDVaWHBmNmdmZElNY1JPUWVZWGVIeGdZQVZDY01aREZ3TU9DaDZvSHN4U3BRR2M3dGZwQ1dadkN3eVpNcjJHTS1YRUpya2RvR1BfSw?oc=5",
     "summary": "ATO/ZTA Leads Top THON 2026 Fundraisers Onward State",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "THON announces top fundraising totals for 2026",
@@ -149,7 +149,7 @@
     "date": "2026-02-22T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQend0TzVfMU1XVk5kUEo0cDY1MFh3MmFKNXRmQkxEc3lJSkdDc0R6c19HT1IzUG5FRnIyUVJKMlk5WGJyb3VkUVhzbENFRVYtLUxjY0oxOWZxeW5Bclc5NXFJU2QwRmRPeEQzYlIyam5NQTVuVUpyZ1N5TURCQlJqS1VDcGJ4dTNSanEyTDBvX3NjeUFMT3VFVmQ3R01HMmFMTUpJU0JyN2o4OWJYWTRtaVBZZmtwQXp2eDhNTEluOGd4eF9aaW04TWVmUEZYY3ZBU2FfSFBXSm5JQQ?oc=5",
     "summary": "THON announces top fundraising totals for 2026 The Daily Collegian",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "A Legacy Built on Brotherhood",
@@ -157,7 +157,7 @@
     "date": "2026-02-20T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTnU4SXd3S25iaS1iRkR0dUN0b3pNcnNUUmlaRXJxb25iLVZwSFl3M0NKQjBpak1rM0tzcExacVZmNUtPTWpHSFlFbmZQenkxNlBGOTRrX0ZTVzdWc3B6ZlJKZjNuaW1rUjBkU3FzcmxQMzFrZ0Ntc2cwX3pwT2VvcUVTOXFNOU5vaEU4?oc=5",
     "summary": "A Legacy Built on Brotherhood University of Dayton",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Not your average fraternity: An inside look into business fraternities at Trinity",
@@ -165,7 +165,7 @@
     "date": "2026-02-16T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZHFhb2EydVNFX2E1Q2pfNzdnNHg5VXhsNWdWUXZoNnRFTTFDMUZIQkpnNHM1SmtQbG84VDZDQWsxWlRfT3d4eHV0eDBmSlRidkczd1ZZaFphU1NLOFZDTk9VY0VQQlN6RXhSR01iWjI4Y0pQWHQyMWt1X1Q0WkJSY3lWUEdvdHFLcVA1TThDNzJIcjV6TXJ4ODZ4ZXYxdG8yeUJfYlFnMUdvSE5zWkt6dWdKOEhzcEk?oc=5",
     "summary": "Not your average fraternity: An inside look into business fraternities at Trinity Trinitonian",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "The man in line to be Springfield's next public school superintendent | Photos - The State Journal",
@@ -173,7 +173,7 @@
     "date": "2026-01-28T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQ0h4ck1JV1Y1NHlERjZLSGgyUTNZRnlaaXJ2RmRtUE1MNjd3dWU0eTNMcFoyYWtBdDNGOXE3SXl3NFhCYWJXODQ4bnNxblRmZjdjZXhneEJzTV9tak9qMjFka1lqdUZtWTk3ZzdTZHRsOWduWXlfWVl5U0JuVEtfR0FXTUQtcTFrSFViZ3RQbTBnc24tVFFWY1RkbWU5RlR1UjF3QU1fUkMxN2RyQ0g4YjlhSHFvOGplT0lXVHZOMUlMdDlOUmlvQUpYUFVsUU5z?oc=5",
     "summary": "The man in line to be Springfield's next public school superintendent | Photos The State Journal-Register",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Rush numbers reach new levels",
@@ -181,7 +181,7 @@
     "date": "2025-10-18T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9KTWV5VUpOYnp3Sm1HN3lYcWhkcy1EOVotM3RQQm5JaVNLeGlZbUlIc2pMVGhNcWVTM2Y0N3pKVlpPZ1BuZkFfMkpnZ3htY0FJN280R3B3T1pPd1NVcWNjaW43ak1sektXWjFjVXFhZmJQdw?oc=5",
     "summary": "Rush numbers reach new levels The Santa Clara",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Greek numbers continue to grow",
@@ -189,7 +189,7 @@
     "date": "2025-10-10T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9VeTllWWtiT0VQSlNCcHJGUkVYek4yWnZtZWJQaHRRdDNjdlhFaWdoeEpQalh1VDhXMFFTaG52RmI5eFRlLVFQWXd4Q0lQM1R6R01ENHJ2SXF3Y0tYdV9qZUM4enNqQ18zdE5MdlZoTWU0Y1E?oc=5",
     "summary": "Greek numbers continue to grow The Santa Clara",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Zeta Tau Alpha crowns ‘Big Man on Campus’",
@@ -197,7 +197,7 @@
     "date": "2025-10-08T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQzFwTVRRLU5hbFJzVWVQTVJlcmFua3Ntczh5ZVI0bHN4aGhfeFhobzI2aUhsQnAtRFJlV0NQbWtKMGhBdE1lT0FKbjUtN21Rbkg5MjcyMmFvclQySUxNTkgwV1JSc09TZnlGYnI0ajlBS0tiWlpYYVZNZWRPREpnMHVvU3XSAYwBQVVfeXFMUEFaTFVwMTBHMmk4VjQ0ajlRa29Md1d4RzlYbk5XaGRsbktuWkhfa2dUalJFeXh5OHhPOTN3bWcyZWpzcV9PSUhRbWV5bVAtLTJBYS1ucTBPX1Z6MG9mbzdXQTdxY3hZV25raXE1SThKdmlLMUduN3p5UXNUbTJxbzQyWTFNOXRRMkF3RVI?oc=5",
     "summary": "Zeta Tau Alpha crowns ‘Big Man on Campus’ The Baylor Lariat",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Northwestern business fraternities help members land internships, careers",
@@ -205,7 +205,7 @@
     "date": "2025-10-01T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRWw4WGQ0dDhiWEZERWhuOU5fOWtKTHlpMmdaSm1LWjg0SFM1aVRQZE42b1l0SkZkTjlpM19VOGFJc0NLRWpGTlBuVzRfVUZFS3hRa2JkNjVjLWJ1WkZtdkQ2VnJwZDJDb0RwUzhDSl9LQzMtVGM0SXYwQk9qY0ZTVVBOcGpPcVltcHMyMzJlSkt2c0I4ZUNUSWZST1FqbnlobkpQaWZITE9wNFZLdUJYRDJaTTdEbVlrNGRIX2Jn?oc=5",
     "summary": "Northwestern business fraternities help members land internships, careers The Daily Northwestern",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "In the wake of recent Greek life sanctions, SDSU plans to roll out additional hazing prevention resources",
@@ -213,7 +213,7 @@
     "date": "2025-09-25T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPTTFOX3dONFlnUGRXVW5MNHBSaHp1eWdkc1o4V252RWl6U2dhN1hCS2pnRHNoYmVoQ1hWUEN3dVByNU1HeGt3N1B5V29tUXlIWHBCVWx6cGNldXVvWGJLX2dKbXJJLTJRT0s4a1RIUnBMeWtWbERDS0d4TVJqVVl1SG5lMnlIT2w4MW81dU1oc3FyWDRMdlk3RTUwVDFLc3k2TTcxcUFWa1dyUEt1akt4a0xNWUtXdnBoa3FkQVUzakNUNUdFMk5kQjYySWxPajIzNmFmZjlBTHVlN28?oc=5",
     "summary": "In the wake of recent Greek life sanctions, SDSU plans to roll out additional hazing prevention resources The Daily Aztec",
-    "sentiment": "negative"
+    "relevance": "medium"
   },
   {
     "title": "Pre-Commerce business fraternities: Worth the struggle?",
@@ -221,7 +221,7 @@
     "date": "2025-09-17T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQN2Q5TXZNRjJsbEhyekF2SWk3cGxmbHVZODVmalV2MHpXMjQxM1VnVy1YYm9HMC1aWUphUXV1ZmtKUDdIbUVWcmpGbVNPTzRsLW1Rbi1VMGlNR0wzVFNoemJ5Wkl0Z3RjQzM4UFNYVDRGaDBzUlZ6bkx2MGVtTERxTFZ6RnpDZkJMZFdUSGFGdjRkQ2d5cEtSZzBOcE1CS0ZO?oc=5",
     "summary": "Pre-Commerce business fraternities: Worth the struggle? The Cavalier Daily",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "TikTok creator Malik Taylor dies in 'tragic vehicle accident', family says",
@@ -229,7 +229,7 @@
     "date": "2025-08-25T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUE5QWUMtNXU5RDU1ZlVvcllPX2RNeUM3MWN2cHF4VzRDWU5UX0dmYmQyR3ZVSHhDeWYtZmdTa1Y1VmphR0Q2NXJ3cnpLbVB4T3BfMWo5Wjg4WFlpM3NKTG1paWdRN2NqRWcycXdHd0YxcWxKdnYyamxKekN3YXZCNkFoN2NPMG9KWUhoRnBJSlE4YTJBMGpTUVZtU0l0eW1OM2VqTk4wQkp1X1AteV9nMjQ5WUNvMXpK?oc=5",
     "summary": "TikTok creator Malik Taylor dies in 'tragic vehicle accident', family says USA Today",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Influencer Malik Taylor’s Cause of Death at Age 28 Revealed",
@@ -237,7 +237,7 @@
     "date": "2025-08-24T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT0hTaTc3eXdzT0E2czU3OTd4TTlPRXhsVEg3LS11SERuaGJJcFBQcjZNLXpVZGZEMFJtNHFvX3NUUGgtS2FHaVBXdGQ0a1VfRV93SGZNaFR2TlBWb3ZvSkNvNTBVVTJIMjVKVlVRWTBvd0xPOHlHd2FwcWE1LU5GWlQ2VWJuaDZKN1d5THFOZGw2MG45OWVkSHl0WjYtWjYxcGlxVFU1aVhqUlRZYnc?oc=5",
     "summary": "Influencer Malik Taylor’s Cause of Death at Age 28 Revealed Us Weekly",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Influencer Malik Taylor Died After 20 Foot Plunge in SUV",
@@ -245,7 +245,7 @@
     "date": "2025-08-23T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNW4xYUs3cmFjczUxdVNVQlRZYjRKVE5EZjJZTWNWc0NnLWdVMmNtNjVWLUIwQmdpOW10aVRTS2FkSDZWYXBmQk43LUM1SE5XRXNhYmtCLTgwY2NXRUtmS05NWmNLWHZ2bGIycDJscG9pV20yZHg1WFVTRnctRnBwdVYwUkY2Sk1H?oc=5",
     "summary": "Influencer Malik Taylor Died After 20 Foot Plunge in SUV TMZ",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Tennessee social media star killed in car crash",
@@ -253,7 +253,7 @@
     "date": "2025-08-23T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOakE0QWw4enZ4ODFfbmhIdng1X1ZhR284RmJIT3lGSjExcWY5RGpCSmhSSGppZ2VqcHJWTGFxaDd0bU5QRHVCeVJEVHZSQXF5SEw4a2hZR3A1R1AzXy1JdmhfaHZDckhhQXJFZTN5Z28tb2JVS1VsUWc1R3Zkay1QbnpzWQ?oc=5",
     "summary": "Tennessee social media star killed in car crash WSMV",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Memphis social media influencer dies at 28",
@@ -261,7 +261,7 @@
     "date": "2025-08-22T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcVdLSGVlMFhjTnZpN2RQQ3c0ak94TmRpUFN6NTJZbkJoVTQ4aFFkYW9KbG1fNFpnaUdzcG1lZWNvNnY3WURxZ2JYUFlDTW0zLVFYclJzRW16VHZ3c1g5OGxpa09KX0cxV3pOallSSGZJRmMtTHNTbW1pQnE1MFYwZ3BzSnZ2SlNmRGhKREdXVmlZbXJKdldsUFFyMGxNeVJieThpdEdiY0NucHBWblZ2NEFzNDl3SmJQYVBXN20yNjlSVXN4?oc=5",
     "summary": "Memphis social media influencer dies at 28 FOX13 Memphis",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "TikTok Content Creator Malik Taylor Dies At 28",
@@ -269,7 +269,7 @@
     "date": "2025-08-22T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tcm5Jd3JwYnJVcUN5VkNkUFdELWNEd2FFRmg1aHdqOHNvbHR2VDZYdUl4X3R6T3ZTR1FmWkdyb3czWFNwUlF6U2Y3V3RnOHVtLWswUW9PRDcxSXdxTk82MXFn?oc=5",
     "summary": "TikTok Content Creator Malik Taylor Dies At 28 Blavity News",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Malik Taylor dead aged 28: TikTok & YouTube star plunged 20 feet to his death in horror vehicle accident - the",
@@ -277,7 +277,7 @@
     "date": "2025-08-22T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaExzY2dDTDQ3dXd4ak5DWVFpdjdCLTNuOEhJUUVEUVQxVEJqRHkyR2JqVWt1anAtM2dOWjI1TzNJRDhzQ1I2b0JjZkhLVllUejRlZWFFem5YaUEwQlJINzJUOEJ5ZTg3NVpvUHRVT0tER1dnd2sxQUluWEtXTFJGVDFWLVhrc3JfdGx2MFdEZzhHejZm?oc=5",
     "summary": "Malik Taylor dead aged 28: TikTok & YouTube star plunged 20 feet to his death in horror vehicle accident the-sun.com",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "The Recent, Troubling Wave of Black Influencers and YouTubers Who Died in Their 20s",
@@ -285,7 +285,7 @@
     "date": "2025-08-22T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNC00V2xaZGZSZnI5VmVRNGYxckpUU3FRNFR6dUVzMDdaaWVfYjVtQy1oQnNrU2tvS1pxTFo2WnBFa0xucG9rVE9KNkpZMHVJdDhEM3R6elU3XzhrbjFHQ2p3LWl1aExqVGkweDJwZ3FGUkFhUkdsc1NrdDdwRHNDMVJvbDZVaTlGWFIwSVZoT3cwTFk?oc=5",
     "summary": "The Recent, Troubling Wave of Black Influencers and YouTubers Who Died in Their 20s The Root",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "TikToker Malik Taylor, creator of ‘The Unpopular Party,’ passes away",
@@ -293,7 +293,7 @@
     "date": "2025-08-22T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcWxWa0xiNFRLWXM0cmJ0XzZRSG5iQjhaUzN4ZWxNejBpdjNRRS1VRFg2YnJlaDhKU1dTUDFucjN0Zl85LThOTlFCdHBmZzFFRU1DOHdPSFpPLXhNZENJaFdXdm1JT1MzemtXdTJ2MzBRVDdjX0JYcmJRNy1ubTZYVk1adW1IcGxQb3FJU3MyS1hlTi05N2xwZmV4U3U5WUFMUHfSAaoBQVVfeXFMT1Y5ckRYQnNZdEZQZ3djaXBsZlVoMlJzd1BQMEY2ZzR2N0J0c3hkd21rTTVCZ195d3JGeHZTTUZfdzAtRU8yblRxQWo3SFhCNGNWZVMyNE5QeElZdE5iZXJzY3B4Y3R2SDAtdGxZQVlIUTBzVEQtYUE3SGdlRk1TZUtRNElZeXJBcFZqYkljbTg5djUtNHJySmV1NS03aWVCV1pOVXoyb3ZMZ0E?oc=5",
     "summary": "TikToker Malik Taylor, creator of ‘The Unpopular Party,’ passes away The Express Tribune",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "TikTok Influencer Malik Taylor Dead at 28",
@@ -301,7 +301,7 @@
     "date": "2025-08-21T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUzNjbTZfMmhNVWI5d01rWTAtQmY2cmxFMFdTZ1ZWbUFfRFAteUdTOWxfVGlZc0NleENyUXVvZWZFVHdlb21nUGxEODlWWEZ3YUtMSzhhN24xZDdGbXhaRjNta2xib3RxcHNoQlhnZGRaZDNmeW1fV3NLZnlZbnpKSUVDWUFkYllPTmVGNWlzMjRDRFRab1hRWVROYnk?oc=5",
     "summary": "TikTok Influencer Malik Taylor Dead at 28 Complex",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "TikToker Malik Taylor Dead at 28",
@@ -309,7 +309,7 @@
     "date": "2025-08-21T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9jZ0VDRnNCV0oweE5ZQ0NIbjhkV2REODBsNU8wVTJXSzhhSUpSWTgtcWhqLUNBNEY4bkFuTTlwRHBaMTgwbDF2UUZvTkJZSkxfOHlhQVg1U3NMb2t5LVZiamEtMXIyaDZMMlk2ck9NRm15NHN2WHRCeQ?oc=5",
     "summary": "TikToker Malik Taylor Dead at 28 E! News",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "TikTok Star Malik Taylor Dead At 28",
@@ -317,7 +317,7 @@
     "date": "2025-08-21T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQT1pSdlZrc1RYNnVOWEhPMlc4LWVlUU02Z29ldFBFU3BxX21QX0piZGkwal8tNEZ4YlZGcEN5ai11bXR4SUNmUGFuOXVnTVdraWd0bllwOGUxMDFaMEF1WEtJMVdRVVFUT09QOXpMUVdobFpMR3g3dXB4VjZWSVJGeHEyWlQ?oc=5",
     "summary": "TikTok Star Malik Taylor Dead At 28 iHeart",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Stanford Student Killed While Riding E-Bike on Campus",
@@ -325,7 +325,7 @@
     "date": "2025-06-03T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSV9IQnNKQy1LMTlVSFFPX2J2amtzR1A4eFBpeGQ4Vk9uN0gtSk9TWWdYOXZVLVpoYWpGQzkyaTFVTXQzYjktQjlCbGphUHkxNWNlVnV4cUQ0aFVRdEJlbWU4dENBSUwzd0xwWm45OEVwSFFyZkQ4YzdNOFM3blZHWGRzZ2Y3YjlEeS0w?oc=5",
     "summary": "Stanford Student Killed While Riding E-Bike on Campus SFist",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "June 7: LDAC Kappa Alpha Psi Diamond White Party",
@@ -333,7 +333,7 @@
     "date": "2025-05-28T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYi1KdmY1bzdkNlNWV1NpZi0xOXhWTXlIa0V4bDdYeWxyOFdBaS1fSVhrVlZPanhRcnR6cE5yTXR2b2lMR1FGSEJiZHBKZE1QZ1UzbXppcnRheWFYRktCcklJN1FjT1VIdVpPVW9IbS1FMkxKWGVqTXlXemp6ekhodDBJUlJKUQ?oc=5",
     "summary": "June 7: LDAC Kappa Alpha Psi Diamond White Party WCLK",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "The race to 500: NU students chase LinkedIn’s magic number",
@@ -341,7 +341,7 @@
     "date": "2025-05-22T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRVV0YlI3cHE4cnN3RDVhRzJIT1h1V0hiRElIT0lRN0ZvYnJIbGVocDBHRUF3dVBKOFJHd0YwQkRaaUUyMnJNY29GdURieXYzSTBuWk50c0xNc2ttSmVXMGdjVlZ0bFNvYWsxMFRoLUNwRndsVEJmWE1OMzRjUlJNZU5YOEtveXNkbHRidnZaa0RQLThlYThjOXVBWWdzVWl4c3VaaEEtUWFfeEU?oc=5",
     "summary": "The race to 500: NU students chase LinkedIn’s magic number The Daily Northwestern",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Bianca Russell Obituary (1992 - 2025) - Memphis, TN - The Daily Memphian",
@@ -349,7 +349,7 @@
     "date": "2025-05-16T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVEVIZExpUXlGZHlCQkZkTTZrUGNxTnJ5SlFtcnFqdjFEQ0hTYklXY21HR2Nmc3dDNWtBMzZadk9zQ1pVVFgyM2wtRGdFZVp5U3lRb3F2SXRxVF9kaWFUc2JHMXRkRExoRlNVRkpYRDkwRUpHVU91NmxtSExGVGVBWjlYR3lNT21DUTFFQlNzTkhJa3ZzdEE?oc=5",
     "summary": "Bianca Russell Obituary (1992 - 2025) - Memphis, TN - The Daily Memphian Legacy obituary",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "18 organizations faced disciplinary status this semester, 11 for hazing",
@@ -357,7 +357,7 @@
     "date": "2025-05-08T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQY200d2Fxd3REdTVGSXZKdDV5eDNTRktfY0c3ZERxZDNzbDVNRVRKbUpLRnNFMmZPRzR5Y0YzRVJJT0RkQUZKLXF2RlFlWW5WYkdrcW1aNThmTDRabC0xblpwUFVyQmo2TnF0WFJtUXNxVmZvTlF2dml6QnFtMG8xRS1HT1EwdEFKOXRxaC0xLWtya3RxYWc?oc=5",
     "summary": "18 organizations faced disciplinary status this semester, 11 for hazing Indiana Daily Student",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Indiana University puts pause on all fraternity and sorority social events due to ‘health and safety concerns’",
@@ -365,7 +365,7 @@
     "date": "2025-03-05T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYm9FUkh4OWtRY1JpbVgzbTVIRHNQVjdUTi0wUFQ4QXFiczVCc01LSVVnclZjNWFLU05GVXJ2SVZzQ2JVWllhVGQ0aWNTdTY4NTZySE1JZUJBQjh6SWhmdXA2Rk84WGlyUVh4V0k3OW13NzhFU2wyQ0x5V0NzWUlFemdfZHpxSkljTnZGbUw4VXJqS0cxUHd3SVdJOG9QMVpJNElfN21GWWNEbUhHWlloNjl6R2g3N2NoQVBzOHJ3T0tfSkFEaHJaVDgyTEhnRWfSAeMBQVVfeXFMTjdzbHpmUHdfQWl6NmtWRDJXSXdQeHF4bFNaZzVFbDJORVZ1b0JObHJVaEFKTkxQUVJZSVRCM095bm5vWVhoekI2Zld4TmNKZ2FKVk5aaktEc1FlVVZwUVI1Z0dBcHV0aW1JdVNEOGdCWXUwTHR3YUlqcEtNbnp2V2RGYjgzM2E4ejBpVzhKcy14eGxvSVI4OG9hQ2pnY2thdlVQblFKdjNPUVNkQkNkYlY3LUpOdHJiQUhwUGdKbkdFLWVpWkJTbHZwMVNGZElTRHRTNVlsVWZMZFVtdnNSUVJlYlk?oc=5",
     "summary": "Indiana University puts pause on all fraternity and sorority social events due to ‘health and safety concerns’ WPTA | 21Alive | Fort Wayne, IN",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Jake Licata Using Past THON Experiences As THON Dancer 2025",
@@ -373,7 +373,7 @@
     "date": "2025-02-22T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLTRFbHV6aFR0QkhjMDF1bTdZY0JaS2VlOHluTU9GLUx6UnM0ajQ2dmxab18tcWw3VkJpbFRBSTZoa2drdFVGV0JNb0lpQU1xRjBIWEdmOUU1SmlxRlJQcmFMOEEybUd1YjJBWWMxbG1VMGVUU3FwQ0lHMDRKN0pLZGxFV281c1N6ZkRoem9ha3ViNWQ2d1cxeVZCaw?oc=5",
     "summary": "Jake Licata Using Past THON Experiences As THON Dancer 2025 Onward State",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "ASU Celebrates its 125th Founders’ Day",
@@ -381,7 +381,7 @@
     "date": "2025-01-14T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE94R01uT1YxZkx0V3R2NlV1OGhnUGR4NWk5VTRNWFBILXZfRDg4ak9qRWVGdXcyQU1rUVNiWXJvMDVrb2tvMkdxQl9oeWp1d3JXalFpS0M0QWpOQ214UTlRaFZiUmJ1VTQ?oc=5",
     "summary": "ASU Celebrates its 125th Founders’ Day Alabama State University",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "20 student organizations on disciplinary statuses this semester",
@@ -389,7 +389,7 @@
     "date": "2024-12-11T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPM1BocEV5dFF6enNKRFB4MGNhNHFPbmJVNjExUEdKRDFOc0R4QloySEgtVUZUdEtabHRuMjRLVTZ6REd2YVdlVW1xWU05R0dSVExib3Q1TDFCdzNXZDN5WDN6cmN1Wk1fNUdNbl9tUGo3bXhzTTlLcTdrNUJPdXFNV1JQWDMyMlZ3aWp2cF9JTUNMek5KTmlBOWR6U0JVY1VvaGZPcw?oc=5",
     "summary": "20 student organizations on disciplinary statuses this semester Indiana Daily Student",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Meet Alpha Kappa Psi: The Chi Alpha Chapter",
@@ -397,7 +397,7 @@
     "date": "2024-12-05T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQb2FzaEdqSGk5QzdHajdkcDJRUjkzd1hidHo5WG5hUXBtZHlYdUhMU2xwWEFvRUozUG01SlYzT3J1RUQ1WGd5QktnS1JPSU1UYTlldlZmOU8yWHl4cG9WNEF3RmZhVW5DX0hYcS0xdGsyYWRQVkhZSURULTdWcEZiSm5zQWlGZk11c1pZ?oc=5",
     "summary": "Meet Alpha Kappa Psi: The Chi Alpha Chapter The A&T Register",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "LSU Business Student Organizations Earn Honors",
@@ -405,7 +405,7 @@
     "date": "2024-10-25T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOd05NMG1iVUM0YWVmeDZVYVVUNjNjU0pzSE9LcGdmSGpHUmJBNG5DNnI1ODZsWWl3ZGhqa3dGM05xems4S2RPbDQyREdfYmozRFJfWFRYcFlFVzZTbDRsemlYTnJQbV9wTmlLaHJWemh5Q01uTHR0Q0pPandSVGNyYmhmdjZqeDBpTDFWcC1UU21lQ1AwamhGWC16YTN2SlcyM1I0?oc=5",
     "summary": "LSU Business Student Organizations Earn Honors Louisiana State University",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Obituary information for William Dean Reeves",
@@ -413,7 +413,7 @@
     "date": "2024-10-24T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUFdiZG1NalRSb21EQ3VKajFSWWFqM0E2WDV1WFViR3pxWF9zRXdPWTlZVTRlRWRVRm9fTm04N1RNMEY5a2ZXaEUzNUx2S3l1dlFpUk9GMlVaNUppZGZIVUY3Y2RLaFZ0UTZXY052NDRhc1B5bGlUSlJ5aGp2MzhLQUlB?oc=5",
     "summary": "Obituary information for William Dean Reeves Crowell Brothers Funeral Home",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Harry \"David\" Orr Obituary Oct 13, 2024",
@@ -421,7 +421,7 @@
     "date": "2024-10-13T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA0NXlBVGZDVnJpb193dG01QjU4aXBlRllDRDZNbDZJdG0zTHFzTFhrRDlCMXdBREdqYVVrS3lmR2lVc3AwUnlla2IteDM0Z0ZNN3NZaDY0WFU?oc=5",
     "summary": "Harry \"David\" Orr Obituary Oct 13, 2024 obits.jhenrystuhr.com",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Building named in honor of 1982 Trine graduate",
@@ -429,7 +429,7 @@
     "date": "2024-09-25T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA5d254akF2RFY1Tm1PY1FqaWhkTnFRSUY1M1F1U2VxTFBLRGlVS2c1VzFNTmMxNWRoR2ZJNDBXVW04SWtSLUpyV2k4SHZNYmVQOGRtWEt6cXg?oc=5",
     "summary": "Building named in honor of 1982 Trine graduate Trine University",
-    "sentiment": "positive"
+    "relevance": "medium"
   },
   {
     "title": "Student Spotlight: Eric Hong ’26 -",
@@ -437,7 +437,7 @@
     "date": "2024-07-01T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRWdEVklTV1FRUUxBVTdiT0MzRURVdHZPdG1RdXZrd2xHOWFRbTVZUVExd0ZwaWpndzFYanJnSUE3WjhGQm5KYXBTS1NFNUdXZlN1VGttbUlwSEJ1QkhuUmQ2UnVEUUlkZks5WHJNSm5CMTFUVjVOczd5ZnQxbklidEduQQ?oc=5",
     "summary": "Student Spotlight: Eric Hong ’26 - Chapman Blogs",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Christopher Peterson Obituary - Pottstown, PA",
@@ -445,7 +445,7 @@
     "date": "2024-05-11T14:21:16+00:00",
     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA2N3IzQXZIYlQ0V05ENHYtckVCel9BUmRlaVQxNm8zaU0zS2RYN0NVV3NjOFozMy1aaVA5R2JPeVBsS25UMFRoSDhETnhyMzVkY2RzMGRlOTUxRlBxU2ZRS2pYNTBSUW05SFk2VjNR?oc=5",
     "summary": "Christopher Peterson Obituary - Pottstown, PA Reading Eagle",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "‘I live in constant fear’: Fraternity suspended after UC Davis student alleges hazing",
@@ -453,7 +453,7 @@
     "date": "2024-04-18T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5oV1RMVWh1WDNlWmlTRjFad0M5RWpzb3RGb1BJTFRYclVYWGdWQ3JwdWpLeUplRjAxOUI0MVJXQm9iZjFONXBxY25oWEJTYXZoU1dIbkJhUGN6aGNsdDhiNU5YT1pHd9IBZkFVX3lxTE9RYkNNQmJkcG82MmptaUoyVkdKb2FPVlpXNFZvRTZKa0ZHTzZmQVA1RVkyRDEzUXU4VEdvdUNjOWVnQ2NsNElSS1FxRTlLeHdxUWJwcE1zYkY0ZmFnYU5lV29TQy1Tdw?oc=5",
     "summary": "‘I live in constant fear’: Fraternity suspended after UC Davis student alleges hazing Sacramento Bee",
-    "sentiment": "negative"
+    "relevance": "medium"
   },
   {
     "title": "UC Davis fraternity suspended as university investigates hazing allegations",
@@ -461,7 +461,7 @@
     "date": "2024-04-17T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5pNmpMMy1TcG13TFB1V3M1NmlFM2xiZURoOUxLS1d5cS1udjZXalI5NzRyNEZYZWtCN2pmRFZqZHMyZkFPaURqaXFOM1hoTzBSLVByLU9ha1dZdnMyT0ZfMjlFc0Q5UXR0RU11YWQ0S0s2bEdTXzZ0aUthT2NIM3M?oc=5",
     "summary": "UC Davis fraternity suspended as university investigates hazing allegations KCRA",
-    "sentiment": "negative"
+    "relevance": "medium"
   },
   {
     "title": "UC Davis hazing case suspends fraternity from all operations",
@@ -469,7 +469,7 @@
     "date": "2024-04-17T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT19CR0FEUHk1ZUpKNnIxVkFiZ0Rxa2RfQzB5UHBtLWdUNTdlSUVmRWJLdGwwU0swQ3g2RzhpaWN4MzVYSUNVSjZfaXFsM1lsZk5yV1B4TS1nYkNWT3dRT2M1ZFlrekdxa3lsY3o2TG5Kcm5FVzRwOWQ2QnlPODllb25fRWo0REUyWWQ5dEU4eEVYdkxPZE5jUF9zUm9xWC1ZeVU40gGoAUFVX3lxTE1FR0pqNDJtSTdGSzlPUzd2TzRaYzJQb05kbDhGN1V4eG0tT0hsWl9HSDRITERRUi1WdjNkZGRMY2l1WnRqMURxVTM3T2Q2OHc0WHNLYXRZYVdaNk5fSHpfQTl0bExNbmhnQ3FxRUpfb280a1hkcHpCY1doNVkyNjdtVThIN3hHMkNMQk8yVUVfZ09rZ05FdkxHZEIxbFhpdTRUTEtlWjRRSg?oc=5",
     "summary": "UC Davis hazing case suspends fraternity from all operations CBS News",
-    "sentiment": "negative"
+    "relevance": "medium"
   },
   {
     "title": "Lakeshore Chamber names new CEO",
@@ -477,7 +477,7 @@
     "date": "2024-04-02T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNU0dLWlh5QmdzM1RTcDZuWFFYNTN0X2sySUZwVFNJZGxLdUZQc3RiQVZGbUlmYno0U2F6TXhsamNadDFJYnFOWm9qLWRLa3FPSzR1a0hrOEUzZ3IxRnFXdXQ0LWljZEZLUkcyZW1GWm9aaTlHa21nOFlQYU1CcnhZVzJlNDM?oc=5",
     "summary": "Lakeshore Chamber names new CEO Inside INdiana Business",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Charting the course: Exploring Vanderbilt’s business organizations landscape",
@@ -485,7 +485,7 @@
     "date": "2024-03-01T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRGZ6bWZJNHlhVVNiYkxjSnQ1bWI0YnlUcWJBRmh0RDRCbTFwNUhNaFlNTl9Wa0Y5bzJ6UXdFQVREb3RfcmJJR2kxNzlsQl96cjM2dFFHWHNucGJVTGlBVHkyRmMzME9aX2N2anFaYThIOGk1RjFBaFE2bktHUklWTXltd0ptMWV5ZGc3NG5xSi1IWnFvYUdoVmZaVkpSTlBGZEFSeWxwdUV1cnJ4Z2l0OUlDNUdpN2M?oc=5",
     "summary": "Charting the course: Exploring Vanderbilt’s business organizations landscape The Vanderbilt Hustler",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Student Spotlight: Gerard Monteiro",
@@ -493,7 +493,7 @@
     "date": "2024-01-26T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSVZ5dUpORlQ1VXBJUXlLUnBNbWdEMkFUU2hkN2ZIZFA3cENoU29fRU5wQ09ZdUFUd0RVSHhVMFJ0dkFpMzVrNE54RnNiNmdGSmxCZHFzV25oWDhwUmRvWTByRkVhOUFIbTdhUmQ5T2RyWGc2dEg1QTJfd09sR1NLakdWSkRQbWpNUEtqX0xMd0d1dlZmNHlCTERR?oc=5",
     "summary": "Student Spotlight: Gerard Monteiro Vanderbilt University",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "LAHS Graduate Jenna Harris Receives New Mexico P.E.O Scholarship",
@@ -501,7 +501,7 @@
     "date": "2023-12-06T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeGExTHNOM1JwdjNHMUVwX2dXcU9sWFZxejBBZkNoOUlzNE9PMHRqQjROcFhvNElYV1h6OWROMDlOTkd2VGNxbF9VWlZXV0tZdU1qdWNGTFRZeVgzWk84MmRBaWtaM2toMzAyWnAtVm9lUlV4ZGZNeVU0Rmk3VmZ4YmZYVWxPLXV4NEU5c25RVFRkZ1dnSS1hYkxxQzYweDZFVTNTOGgtZ2ozUQ?oc=5",
     "summary": "LAHS Graduate Jenna Harris Receives New Mexico P.E.O Scholarship Los Alamos Reporter",
-    "sentiment": "positive"
+    "relevance": "medium"
   },
   {
     "title": "Inside UCLA’s professional fraternities: career building, community and challenges",
@@ -509,7 +509,7 @@
     "date": "2023-12-03T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSTZBU2NEQ203UkNEQjdzc2o2a2gzakw0ZTdzbkdsZTRKSE1DNm5YSm1Dd0dIdG1aaE5WVVVhSGd0OWRPaU1NMEM2VUNMLUJVYS1YcVVlZm1sY18tSmZwS0IzcmhtLTR5dWE4d0drQU1MOFRwNFRTS25nQld1T3RPdnQ4WDhfdGdHd3RlM0tQUkdOUVhrbEhBeHZYOTZFY0lrc3MtSm9ReUVrQXJaSzJ2bVVXUQ?oc=5",
     "summary": "Inside UCLA’s professional fraternities: career building, community and challenges Daily Bruin",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Kappa Alpha Psi: Helping the community through brotherhood",
@@ -517,7 +517,7 @@
     "date": "2023-12-01T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9fOG1meENfaVBRVWZhTHBGd3hOMC1GelZRVmZyNTZYMXF0Y3FHczR6NFEyVnJsUHpYWFRtNFRoNXNOcUFhbjI2c3U4MWRxLWlRdjlVZjhMM3l1Q0IxbnlnZVZXb0EzRnVNOTZuT0ZwdHcyZw?oc=5",
     "summary": "Kappa Alpha Psi: Helping the community through brotherhood loyolamaroon.com",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Boise State University Foundation names new board members",
@@ -525,7 +525,7 @@
     "date": "2023-10-19T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPX1htc1hoUXU4dWRyTUxaY3oxQ2hMdGxNWHFGNFNpQ0JkU1ZtaUg0TGJKcWpMREt5NGdwWUMzS0JQZjhwaENHUEhVSlBydUZLRkRmZjFWM0dxV2JVcy1uNnZMWDNsNE5lQ25fR194R1BUTXJoRzFHYTUxQ1ozd0laRW1YZTF5ZDF4ZmR4Z2pIRmZlYzNLTVl3U055elEzQy1QSE1z?oc=5",
     "summary": "Boise State University Foundation names new board members Boise State University",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Your Guide To Penn State’s Business Fraternities",
@@ -533,7 +533,7 @@
     "date": "2023-09-08T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQUdFQzRBOU11ZkpvZ1lwQVREdVgtd3VSUnFQM2xXV1JuOG5VcncxcG04V2EyWW9mZkw5bnFHU0lFSndlaS1OeXNZcGhIT19mTzJsZ1RxZXJiXzdKcFpPZkNuYWRiVVdxbE1FQ3NPdU9fWHNmaTFXNDJpQ3R5Q0dCLVoyOHlqRmU1LVJr?oc=5",
     "summary": "Your Guide To Penn State’s Business Fraternities Onward State",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "University Foundation names six new board members",
@@ -541,7 +541,7 @@
     "date": "2023-06-20T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT2U2Zzl0WWE1cnZjY3pOaFlDNGxYTFg5NFMwajI4RnpDZms1NGdqeUcxRDVONktVVGUxeERONHdDNXlDY2pnQlhzN0NEcnhsZEVWZVRlR0hTT2ZPam9uS0lxTms5UXV0QS0tN2pJR01OOHhYMnUxblJwRHdSN3hwdDRDdmpvQ1hNYnhiMVI4MTlRYWVYQzExZQ?oc=5",
     "summary": "University Foundation names six new board members Boise State University",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Beyond the Letters: Exploring Greek Life at CUNY – CUNYverse",
@@ -549,7 +549,7 @@
     "date": "2023-06-07T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNanNxOVpmTDVDOEo4dVBXdW1CQ1NBYk5ZMXpIbW5SeG1yRndFcjYzeVhPWS1ONXoyLUJkdkR0dHlOaWh4LWNtbkZOYkthRE1xTjBka2JkYnlGSXNQUWktcVhmS1MxWXp2NXE2dHdMLThFbTJUOGVHMHkzYndDa0lPQWJRSnF1RXl1aEdZaFJvcWd1akJhTlNycFpRcks?oc=5",
     "summary": "Beyond the Letters: Exploring Greek Life at CUNY – CUNYverse The City University of New York",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Business fraternity works to leave a lasting impact on all majors",
@@ -557,7 +557,7 @@
     "date": "2023-04-10T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTDhuZmtvWnVPUVFDTHRWbnF4YTdHMDEwMHE3QTJhUzJPSTV3ZVVDZGd3dnFDUWJKSUg1b2g3Ul9Ma1g4SU93dXZuV3lSaF8yVi14YVg5SjRJVkUyVzdVWFY3cXJPUU5UTUVGMnNuUVU2VW1pTjlpUDBCYU9zR29GNXdNNENubzBzby1Tb1lHbmdsMlRZRExIUVJwTkliaWNuM0l5anhobFR6djFELU1LS1BRc2tuc0pTX0h2dW5GY0NmWGJOVExxekx1d0lzbms5NVlUZFVMaG9hM1BSMGo0VlEyRU9UUQ?oc=5",
     "summary": "Business fraternity works to leave a lasting impact on all majors The News Record",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Amy Kawahara Rhoads named 63rd Idaho Business Leader of the Year",
@@ -565,7 +565,7 @@
     "date": "2023-02-28T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ1lZMU5mRXM2YjJxT3BLWUFpbVd5YkVyLU1Damw0c0QtbU1DeVlONEZqZTdMaGNfTWdHemkxT2d6SEMtTjFqeUktaGlXSkVWVnBiYm5YbFdDd05XaE9GQWctWkMzbkxjNHlpSmthX0NmU1Rzd2laQXJ3Vi1mNzNJX3pfYTRCUHZxM0IxeV9fRFBSMUlXNkJVdVFyS0toOFd3dXAwb2xSQTVfT2RZ?oc=5",
     "summary": "Amy Kawahara Rhoads named 63rd Idaho Business Leader of the Year Idaho State University",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "FHSU Student Organization Feature – Alpha Kappa Psi",
@@ -573,7 +573,7 @@
     "date": "2023-02-17T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBNSUxrYm5XLVFoQnpBSk8xN2hDSENwZGZpb0tKQmNNeHg2SzN3MEIyYzdocUpzejMzNzhxTVhCQmt6RC10VFh3X1d3?oc=5",
     "summary": "FHSU Student Organization Feature – Alpha Kappa Psi Tiger Media Network",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "AKPsi poster defaced with anti-Asian slur, administrators denounce incident",
@@ -581,7 +581,7 @@
     "date": "2023-01-24T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVkZXcWpOdU16WHltVTYxMkF4Y0lsYUpPd1pvdjBtUzdrd045ckkwcmxGcjVzckM1aHJiVU80V2FhVEVCRERYWTFsOEtLT0lRZlhtRGVaZ2M4SXlZS0ZqQUZlN21uOUY0VnhDSTlUSll2UDJ4ZElJSVZ3elZDdXNwSElxN09nYlhTSXNMalBKUEVoQW9lQzlNMUpMUGFxclhHQVhZeFlBSHFPTVltVlRZakJfUzJoSVJ1Nko1NmNMMGMwQUk?oc=5",
     "summary": "AKPsi poster defaced with anti-Asian slur, administrators denounce incident Columbia Daily Spectator",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "How I helped charter Oglethorpe’s first business fraternity",
@@ -589,7 +589,7 @@
     "date": "2022-12-09T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVWhYNlhsTnVUNnVMbjlhY25TdWxFTGtIQXNvWjlYSFVSSU9jWTVIY2o2UEhYV2FZUkh6ZE5XU3V4alNPTUJoTzRDUFJvT2VZM2VqY19EN3JSVjR4dXUtc25UZUFMOWkyM0VGR2Jrd3NONFZQM3lmMUdwYmpqVlZNbHh6MDY4TTlaenFqSFBtWVM?oc=5",
     "summary": "How I helped charter Oglethorpe’s first business fraternity Oglethorpe University",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Social hierarchies at UM: Why Greek life isn’t unique",
@@ -597,7 +597,7 @@
     "date": "2022-11-16T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQY0tYUWRqbXZRM0tOQi16eFhyaHJaMUt2OGthWThFT3E5UW03LUZmUkNid0VZT3Nkd1BlQ0VVYlBVSEhBQkN4VkdET2d4SE1rR18tMWdUY2VHeXVaLWJlVlkwc09pVkVDMDBzcnpkdVdKdTJkbDJpTWxuaXYyVEpwTjlvMUoySVRBVGUwYzNtR19sbzNvMlFPbFZYMnY?oc=5",
     "summary": "Social hierarchies at UM: Why Greek life isn’t unique The Michigan Daily",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Impact: Imani Meeks '18",
@@ -605,7 +605,7 @@
     "date": "2022-10-13T22:19:12+00:00",
     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qSmNqdnI3bUU1QzFrTkVZdFBVTTRuNjBLeU9BcENiNWtLc0x5RVRoTXVvWW5sMVlUSVp4bnFOSkNiYVlRUjByd0JWek13U3N3T1UwNmVWY2xhRGFxNDljYnBnT3RLejlsdmlJ?oc=5",
     "summary": "Impact: Imani Meeks '18 Ferris State University",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Sororities and Fraternities at UChicago",
@@ -613,7 +613,7 @@
     "date": "2022-08-26T21:01:24+00:00",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qQUdVU2xRQ2pIY2JCU3QtdjlTbHRIVXVEZjh5MWQ3bDlXMmJqRVhadXo2UEdNMnZTLXZGaXJxWDVoeUxYY3RIeVc5bXhtV2U5STNBT2c5VHptVmo1aUNsN2c5bFRXdjhp?oc=5",
     "summary": "Sororities and Fraternities at UChicago Chicago Maroon",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "2022 Best & Brightest Business Major: Yash Tanna, Santa Clara University (Leavey)",
@@ -621,7 +621,7 @@
     "date": "2022-03-26T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOd2FXQUdQOFE1Q01rcE9LdGhFbVlOUlVpWlpHNERFVlFUbGRYWHNtOWl2dllDdnNnSHZvUG11d1RNc2JmcWRxOXBOSkVhaTNrRVVOZ1dodWFWMEJYWU41dnJSRXJkT0ZtNFlaOWw3OHN2ZGU0ZWpuR0RqdUxkNVRJSTRzelFwY3J5cVBuQkkyNTJEVVpuUlBUMWNPVU1mOWdGbHNqUmN5blN2cDd2ZV9MNVpHY280aVVWY3VUX0dINzA4UkE?oc=5",
     "summary": "2022 Best & Brightest Business Major: Yash Tanna, Santa Clara University (Leavey) Poets&Quants for Undergrads",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Greek life prepares for service",
@@ -629,7 +629,7 @@
     "date": "2022-03-17T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQjVGWmdWMkFmY1h6SVM4XzQ3bXEzN2MyUUNadlQ1bUc1cDRJVlZwSEJIcFpBUk90RFZxOE5TVTE4dzVsX0dLVGg0MlhoQWIwaHhnSW5lQUJUZkhjSFNuOGJ6bXRPcUVGb3Boc2RXNmh3SVVXc3RNeklGMmJGN0Foam9BTzA?oc=5",
     "summary": "Greek life prepares for service loyolamaroon.com",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Divine Nine members reflect, impact campus life",
@@ -637,7 +637,7 @@
     "date": "2022-02-28T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPakhVUk9VdlQtejRxQ2FLaEE0bFVWSHQyN3RyMlN0d0VRTDg1Vno2bklvY0ZnQlFVd1B4dS1faUlMak9LaHRVSVhyTUNOc0FuQ0xSeXYyZHZxMzlucDV2Q2FuX2pFTUJmendCYUpmODA2ZGlwSWdmLW1IZ3U1bC12ZA?oc=5",
     "summary": "Divine Nine members reflect, impact campus life Nebraska Today",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Developing Career Opportunities",
@@ -645,7 +645,7 @@
     "date": "2022-02-18T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUDA4d2gzd3NfOGcxeHYyYTc3WW5qOWFIYl8yajkwMlpVanhxd2JGWVNJSmpOdGduN25VMlBPMGRPaE1pblAxdHVYQUtlRnNtQ0RIY0xpZWxOSFdRNzBURUZTazd2WnZncXpDLXI2eDk3YWp6WjNFc1czNEhzOUJXUGpnOA?oc=5",
     "summary": "Developing Career Opportunities UToledo News",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Sigma Chapter of Kappa Alpha Psi Fraternity, Inc. Kicks Off Centennial Celebration",
@@ -653,7 +653,7 @@
     "date": "2022-02-17T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVG9PWFk0VGFRVVh0Q0dtelJiZGYwenlVb0JqNVVid0ZILUl0SWNNNXhRSnZOMDlKS0t3LXU5TGs3UzJHcFprc05qcjBSajkwTF9rNm5MQXhub002VHRDUHdFVGp6R0p4ejJ2NlNSMGdIeHNRSEN2VlZxcG9iZXllM3RzbXFXc0ZkV3VPSDRuNS1MWGtHYzZDbw?oc=5",
     "summary": "Sigma Chapter of Kappa Alpha Psi Fraternity, Inc. Kicks Off Centennial Celebration UPTOWN Magazine",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Alpha Kappa Psi opens doors for its members",
@@ -661,7 +661,7 @@
     "date": "2022-01-20T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fNnBoS1pGcHpjYVhqYXMyYTBfeVg4cUFhU1lRN1VVOGIzWjZqWmN6MlFyTk96YnRqV3JMRWVaQ3FlVTBKN2dQWTVnYmZQdzBNT0E?oc=5",
     "summary": "Alpha Kappa Psi opens doors for its members Old Gold & Black",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "Thomas Browning Obituary - Tucson, AZ",
@@ -669,7 +669,7 @@
     "date": "2021-12-02T19:32:35+00:00",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTnFpR1VLdEVDZVVkQVA2QlJHLUtZVm92bGh0NjZoQkw3TTctUjA2MHlwMWV2NEU2eDR2LWpELXJpUHZaTXp2T1FUR2tBWUgzOFJnbnBYenBpdldXSEFxaWNvYVY3QUpHWm40V19IeVJQeW9NWFdzdmRidWJHTVJCVXg4TQ?oc=5",
     "summary": "Thomas Browning Obituary - Tucson, AZ Dignity Memorial",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Issa Rae Claps Back After 'Insecure' Viewers Criticize Use Of Greek Letters",
@@ -677,7 +677,7 @@
     "date": "2021-10-26T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPc0N5M20xUzU4RDY2b3Nmb3U3VkNXMlp0TUlKMEtjRnNjX21xSnRKeDRpSUVHN3pPdVltSlR0cHZ0eTcxY2cyclNRamdZRGJEeDJNbk9kcy1ISW9haTRYOF94WWl4NkV4U2ZlMUxwcHhZTTVzdUVXajlHTWw1NS1ELXpNS0IxOUZlSEtpZHpKN1FOb2NlR3pCeFF5eFRGWk5FS05BMWQ5NUpRX1M0NzBXSDNtdWo2T2lv0gHAAUFVX3lxTE5hT0dnY1FlbVctdU9WbWtDODZWLXl3LWluS3dzaDY4QUVwd3hCT3BRWmd3UFpMenJBaXhvSWxRb251X1d2LWtwNzRONDZRUnVBWGJORmJaaWw5cmFHRzU1TDFZNUJWTy04eVF6bE1EUE15NXFNUU5IMi10NVFXZFRFOEIwRFRyNEJXSldqRnU2bDlxLTFaSk5HWFlJYmJOMDg4Z1k1ek1QeUI4SHdDZmNlbVZXaVA4dTltUFVOa2tGbw?oc=5",
     "summary": "Issa Rae Claps Back After 'Insecure' Viewers Criticize Use Of Greek Letters BIN: Black Information Network",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Sean Segasture hammers a nail into the banner for Alpha Kappa Psi",
@@ -685,7 +685,7 @@
     "date": "2021-10-04T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVktCV2hxeU1iN3IzRWd1SVhTdjhDYU1LTjFKQVpEVWNEUkxLOFNpdlE0NGpQRG5KTEx3dm8zYmxDLWladkc1WVNNTUpXc2M5YkRjRUxDcVdrdHpvTWpMNHVodkstQnZqWXI3RW1SR0c3aWtGNm12UjVxMldwcUdHSzJUOXpHd09RRFRfWXJ4eV92eVdxRWwxVXg5MUVNb1NWS044eU1fME9jMjJyTGpnTmppNlpReW0zcndUZ2hFNUNRRTdIaHVGRHZxcF9GdUJqNVhkbGlBdUVKMlpGR2RMNDZoam83cDFO?oc=5",
     "summary": "Sean Segasture hammers a nail into the banner for Alpha Kappa Psi Columbia Missourian",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "66th Idaho Business Leader of the Year",
@@ -693,7 +693,7 @@
     "date": "2021-09-15T03:47:53+00:00",
     "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE84T1JpUlNZeTVjWUMzWjh6Z3d4TjBKc0JwUUJhX3V2T1NWMzJvbXVnaUtucnF3NGFXM0dtdTcxQXVyWm8w?oc=5",
     "summary": "66th Idaho Business Leader of the Year Idaho State University",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "HPU Dedicates Space in Greek Village to Honor NPHC Fraternities and Sororities",
@@ -701,7 +701,7 @@
     "date": "2021-05-03T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeTM1WEw1eENxWjI4S1ctYjdnUW51d05FSG9WSnR6TWlBLTVRUUhTUDdmb1dZU3pSRE0tZXNnYXNHR2U1UDRya0tQOFJLSmVMTS1QZkNJMm9kWjhDYzdxNWZRY2JTOTRTaE1WY2pTekc3RkxWdUVDUlV1NFhIWnNXbGtGWUd4TVZDTVQ1UkVhSE5iaEt2VUNkWnRCbDF1MWpKRUFhblVReDY3ZWY2eEJ3dU5jLWN6eVVhMkE?oc=5",
     "summary": "HPU Dedicates Space in Greek Village to Honor NPHC Fraternities and Sororities High Point University",
-    "sentiment": "positive"
+    "relevance": "medium"
   },
   {
     "title": "Business fraternity recruits new member class during pandemic",
@@ -709,7 +709,7 @@
     "date": "2021-02-25T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMkVYSllfVE9sU0RYWF9NQkp0ZDJHazlvOHpQWFRxd25ZR2o5YU5fWHBJR2xUV0lpd3I4b3RUX2hlRGtJUXF1ZWpWU1hNZl83cjE0THQwU2VDRHBaVUZSRnpXMFZ1UGpiVzVJTGhJMS1rUmFMS1NlMTJPNHZXbGVpbTJBY0RoMjY4TFhhU25uTk9kakhJdFVJV1EtdUpCb0XSAacBQVVfeXFMTXdhZzNzQkVveGFHLTZYY2RteXc5SkhyeHlOb3ptVV9PRzlOVFJxOTUyUGpQaFNWM1NESXM0eEJNeFp0SnVoVi1ScFhCSlFKN2x5TFM4M0FRM285blhIcWRMVzh1RmliNl8ycTY1SnVEWHV3RTVVM25PMVROdDRsQk9ia1Baa1diMEdCc0t5Y2l1Y2xXRV9IU2RWMnE4V2NpX01ud2ZWeTA?oc=5",
     "summary": "Business fraternity recruits new member class during pandemic The Baylor Lariat",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "A look into NPHC and Sigma Lambda Gamma - the",
@@ -717,7 +717,7 @@
     "date": "2020-08-16T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTmhsT2ZmeHpoOTNCN0d5OWE1d0hwZzYxUDVoeWtJdmFlZFRNX3BweHdMaW9Bdy1Pd0RZVkxkTm9FS1pFcVNIb2ZnVkJnRUFWZUhGS05vcE1TSXl1ekFqWmlUcmp4UzZRNkIwZjV3alQwOHdrYmdLU0RzUXlZS2NZc0Q5NUhsMFNGNjhtOHZJbVA4MmN1VXRLMnVSWlROQ3FiOGZidlRLWUFkQVRxczh4R2taRFBvVGxyOEE?oc=5",
     "summary": "A look into NPHC and Sigma Lambda Gamma the-standard.org",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "COLUMN: I was an avid member of Greek life—now I want to see it abolished",
@@ -725,7 +725,7 @@
     "date": "2020-07-30T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOclczdDBRTVVVdmRyN3I1VElqU3k5bkNwZkZpUlltVFNsM1R1UVQ3aDk3cExla1Rud20wbWUxSEc0Rm42NWg3N2pKTnhXb0puby1RRlhyaXNZaFVGNXdvTkRiRTUzOEtPWkhnNnczRDRXeEZ1YVNuenF2QUhzeFFxTUp3MHpUUHg5RklSVE5HWVBlYzJrVGlkQklCOGhZT01WZkg1Rk5JdVR4YklicHliV1BtVWZUdw?oc=5",
     "summary": "COLUMN: I was an avid member of Greek life—now I want to see it abolished The DePaulia",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Alexandra Pirsos ’21 wins naming challenge for Alpha Kappa Psi’s 2020 national initiative",
@@ -733,7 +733,7 @@
     "date": "2020-04-22T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQM1J3SjNhNWNid0dUTzFNekUxQzNUTmJBVk9TN1pNYmtLdU9adXVRallsSkprQ0ZfU3hRR29ocEJkUkVWYTZBVlJ6TTRYX3hkZktJUVBNQmVqT3BKdzBESGI0M0RJRnhLSGJVakowWmpNU0ttZUdOUnhFUGVWRUc3OUlkZEduSm1OTHoxNUtvb3E0cnJsYnNQRFhuRVl5ZmxrdTljM1I3eV9hT3pTdTFmTUx0VmRCNm1BTS1LemhCV1FMM2pLRnc?oc=5",
     "summary": "Alexandra Pirsos ’21 wins naming challenge for Alpha Kappa Psi’s 2020 national initiative Elon University",
-    "sentiment": "positive"
+    "relevance": "high"
   },
   {
     "title": "'New Beginnings:' Returning from suspension, UGA Kappa Alpha Psi helps students move in",
@@ -741,7 +741,7 @@
     "date": "2020-03-31T19:57:18+00:00",
     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQZWdEMi1EeW9rcFY5WTNMcVozZ3BMQjU3YldfaUp6N0NkYWR5c0htM29TclRCUlk3cmdySVlJd292UUU2akVCY0xRek8wbmdWX3V6WGl2bW5rUzVsc3VORGliYXR5NFRMaTFLd0loZUdxLTRSN2s3R1A4TXU0SlFPdnNHVWN3TUw5ZzFNOTRiWk9jQk5SQzFmOXV1WW5zakQwU09ULUMwR053QVJhZ1QyanJvMDhUTW9UN1d1dEVBVzRPdnhyZHp5b3g2WU1JcWpjR19pMGFteXVfQVpzNEp4TjdiMFlmS2Q3RVd5UnhBcThkcVdfVW5QVTREZkhEUQ?oc=5",
     "summary": "'New Beginnings:' Returning from suspension, UGA Kappa Alpha Psi helps students move in The Red & Black",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Ohio University suspends business fraternity Alpha Kappa Psi",
@@ -749,7 +749,7 @@
     "date": "2019-10-17T19:46:36+00:00",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUEQxOHQ2WHlNQk55MlNhUWFobXo1WmRlOFJWa01kdG16ZzJFTTNVN1VlR3g2SGowelJlWjM2N0l3VmRDMTRxYWdFcE9aWEVJMEpoUU1oNncxRHB0SXhTa0t4LVFHY1V3WXJPQkRPWWxsc0xlMVV4RkpwNFl2djlhbTRlWllpbEhZdUxBNDk4aXQxRmJPYlVqa0JuYnFScmo2QkpIMg?oc=5",
     "summary": "Ohio University suspends business fraternity Alpha Kappa Psi News 5 Cleveland WEWS",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "Alpha Kappa Psi",
@@ -757,7 +757,7 @@
     "date": "2019-07-23T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcmliUncxUUpBMXBRRmVsYTRteEY1YXJGRzFyQllkZllHR2JlYWRJdkdGVUtjczBOSUx3TTFYWTJyWU5OT1RRVUV2M0lvd1JlZlpvSTltTHU4R3RrcVdtSzQxX1dBdFVnWWY1eHc0SlVST0dxak5WTTVwZk0tdVF2REp3?oc=5",
     "summary": "Alpha Kappa Psi Boise State University",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "Two new councils in works for fraternities, sororities",
@@ -765,7 +765,7 @@
     "date": "2019-02-20T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNa0RVN0ZDS3BKQjJidE9JdVRkXzMzVkhHeEtPRDFSQTRmS0ZaYmlwWmJaSDN4MUtDSXVFNUppT0pzNU9Uc0ZudlAxZjJ1NGtjRkQwcm1BMEJpbVJTVVRCNmUwbmhnYlhBUXlzLUJrSmhJV09ScUtKNkUwRzBtU09scGhVVmJDZEVFaE9sMmpBVjlHeXNZUV9uYmttdHVJQQ?oc=5",
     "summary": "Two new councils in works for fraternities, sororities The FAMUAN",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "[Photo Story] Orgs Decorate BJC With Signs & Letters",
@@ -773,7 +773,7 @@
     "date": "2019-02-16T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeU5MTDFKTFNLMjNhT0xqalJCT2RKYmxtQWpjSDM0d0FsUlBHZExCWTg5UEoyQmYzendVUGRyWDkxZkpXUmpSeVdwNXMyTFZwWDBKVnhLUVd4VUItMkhxdTVBdW0weU1PZ1hsSFBpVF9OS3p2X0dVZ0lJS0dFMHNfWGI5QnB6VVBtWlJJNlg2bzk1XzAwdHVHQ181eWZqaVZBOXR3TDdqUVoyTXhULWcxMUZuWnFpZw?oc=5",
     "summary": "[Photo Story] Orgs Decorate BJC With Signs & Letters Onward State",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Frank J. Brye Obituary Jan 21, 2019",
@@ -781,7 +781,7 @@
     "date": "2019-01-21T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9sbHRPOU1nb1p3aVQ0WTlxS01XTU1aZHEydWtOajlvU0NadWNzWmFVNXJiWS1SOHVIalZsQTkwd0pCdHBwMkZHZ0NjN2NReG51aUtDakFMeHFZRWwzVGc?oc=5",
     "summary": "Frank J. Brye Obituary Jan 21, 2019 ARN Funeral & Cremation Services",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "FAMU’s business fraternity helps students reach high places",
@@ -789,7 +789,7 @@
     "date": "2018-11-30T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTV9COTNxRU50aDJpOUNoNGJxWmhkdmdpYlJMdWNVTy1IbGZtTkhSdEFKTjdwb2FYbnVlS016Tnd1Mnh3YVRFUDB4X09keEg2YUU5b01Zd1d4Y3BVQTRKejFtY2VERlZqdm9ENkllTW5qUzh3c09EQUFRWEZWbXFlaXU4ZTJTcDBUeHltRkNuaG1Xa2owV1JKV2lpaDBMaXR4VnVYVQ?oc=5",
     "summary": "FAMU’s business fraternity helps students reach high places The FAMUAN",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Mister and Miss FAMU crowned at the 112th coronation",
@@ -797,7 +797,7 @@
     "date": "2018-10-07T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOREFweXJXb0xhaG1YbGR0ZGE4anFXNW56T3k3TkdwcXB5X20zMlowcC1Vek43M2JDdlRXV2hNTXhwQWZueENVcUFaM1dmbFJ4Z0JPN2hhMnNjSFNNcFU1T2VlRUxDRldRbDdKTGdoSzJDak9pSmoyaFk2cXFLbDNXSUZ4X1pWcTZIVDNqTjNJVDV4aDRxVmt3QWU3YUE?oc=5",
     "summary": "Mister and Miss FAMU crowned at the 112th coronation The FAMUAN",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Message clear during hazing prevention seminar",
@@ -805,7 +805,7 @@
     "date": "2018-09-08T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQUhJNXJrQTlMak5YNm9fa0pRSmV4QTBHbTVQNFhnRnBpQmg3WjhkcHUyTkk2UVZyN2tvRjZ3emdlaU9OUVZJLU42VzhnUHU5MGp2NGxuRVFhaER2VUtxMUlQQkpFUFpuZnBWaFBYaVdQVVNnZ0lobEwxMUt3b1FNeEhFa1dvX3RDNUJsbERmZTg3LTg2?oc=5",
     "summary": "Message clear during hazing prevention seminar The FAMUAN",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Alpha Kappa Psi welcomes all majors to fraternity",
@@ -813,7 +813,7 @@
     "date": "2018-08-14T22:17:44+00:00",
     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBpLTBvSXRNOElDMDh1cUdoNkhCUGdTWlI1c1lST1pzYm1yTjJDRTBRbFFHQUdRRURuVU9Wcllfb2xFekNreHVpLWY2cUN1QlFRcjNoNkJEX3o5V2VO?oc=5",
     "summary": "Alpha Kappa Psi welcomes all majors to fraternity University of Nebraska–Lincoln",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "Alumni Spotlight - David Holroyd",
@@ -821,7 +821,7 @@
     "date": "2018-05-24T15:19:17+00:00",
     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9Qc180b3lSbFZxT0l6Qk9mTGxWckdac1g1cjhqOVRBSkc2eDFHZG5EcW9oeWF6MGVhSUM2MTFGbFRZVFF2ZWdYcGF5RlRRQTZHbnQ1SDktT3JYQ1hSYkhmSDlVZDJCYnFfS2gxS0dWUlBNMEhlNmlGckNn?oc=5",
     "summary": "Alumni Spotlight - David Holroyd University of South Florida",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "4 UofM fraternities suspended for violations",
@@ -829,7 +829,7 @@
     "date": "2018-02-13T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNmhXNHdZem1FVEg3aldJNEFUalJjUG5WYjhsSEVKOGM3ajloVlFselBlU19tekpteEJLbmZwcm82a2xYVG56dDk3UkMwaldTdDlfeTZIaGZJLW96Mjl4VmtLaXJpOGNveVFBSkF5clM4TzZfTTNKQlRJU3MtOS1rUXFZV083dm5hcExRYWFQWUM1d9IBpAFBVV95cUxNTXpxTkZCX09DLTZ4QktUa2VrU19XTmVuVl9HbzB2MUJsOXRFYlU3SXZRSk9zMXZFbEtKLWtHZjcyaWRsZlB2Z1piN3k0b1JIbGNhbW1hb2taSjVmVXdnb3h5OUJUWDlxZkpOYy1Mc3VoTkQ1QWlzMTZvam03LUtGLVUtZmFXeGNyQXZvdkppUmt5cC1ZQXNjMHFudWFTUW1XakIzcg?oc=5",
     "summary": "4 UofM fraternities suspended for violations Action News 5",
-    "sentiment": "negative"
+    "relevance": "medium"
   },
   {
     "title": "Four Fraternities Suspended By University Of Memphis",
@@ -837,7 +837,7 @@
     "date": "2018-02-13T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNOTA3dWhLQTlOYTJTWlRBT01TSldwS0pWd29zbll3NTJnWEdMWU5UWFpDa0RzQUZrNDBFc1JZd1pUS1U3VGpfTHRrbXRjdmVnNVpKS294TERIYTl3STR6R2RySUREVDlEY3N4QW42T1dzZi1DdndJMHlRY0hTRTA1STEybWdtQV9RWTJLcHJ6NFlhT0pfc0xXZ3hhMHNPOTlFR3ZjOEpRWDZLOE5sWnlLVUoxLWNOeHk1YnV0OEk0ck9mNW4wSUZhZTgxcWNVd2VpLWx4LS1UbXE?oc=5",
     "summary": "Four Fraternities Suspended By University Of Memphis localmemphis.com",
-    "sentiment": "negative"
+    "relevance": "medium"
   },
   {
     "title": "Get To Know Penn State’s Business Fraternities",
@@ -845,7 +845,7 @@
     "date": "2018-01-15T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc282dVBhX2d0amJGMFR4ZEhRX2o4cWFhWlB6NVQ4emJUdF9KNVZNdFlaT3FxUDdUZkk1UndvN0piMFM3RXhKbDBhUkdlenBLcXZ1MElBME1WQWc1MGVsRGJUeVdsSUlIMmVHMTZ4dEhBb21XZmRHQ1lYQWpFUVcwcGJVVVZXeEJr?oc=5",
     "summary": "Get To Know Penn State’s Business Fraternities Onward State",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "2017 Best & Brightest: Emily Foo, University of Richmond (Robins)",
@@ -853,7 +853,7 @@
     "date": "2017-04-09T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLV9YTVE4Rm8tWl9JN2pzdEJacXd5S3BQb2Z1VDgxYnJCS3JDR2F6ZWlGMmsybWhYOEFKT2tYQjFQakJVczg4bkt0ODRrSVFzbXFzWF84aDlfLVZ4LTBUV3d5UGV1Q3NvZndDSFRwNWJSclV1bXBMc1F6NndHRHZ1ZklTcHZSWXh0ODg5M0lTUXVqQ3ZUd0JIUDY3bEF1TWViemhzR1lyNWNxdw?oc=5",
     "summary": "2017 Best & Brightest: Emily Foo, University of Richmond (Robins) Poets&Quants for Undergrads",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "QMUL colony now chartered as Chi Eta (XH) the New Chapter of Alpha Kappa Psi",
@@ -861,7 +861,7 @@
     "date": "2017-03-27T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORmFfaEt3QmxhbHJ1bVc1TnQ4Y3prOGpxOFY3cGRlZ1doZXRVVTVYV3MxYm9HX294Q3VIYk5XbU1MRFI5MlgtVWw1N3lOY282cjItN0I4bkdmUzBxZ3RhWnUwb3lBUXZCMVB5VVJhSkxHa20xWlk5ZUJkcTNhWmtuSHkzYmQ0ZzkxMHpyUjMwaUFnS0FCVlpZYndJbjJ2WTl1bFppYU1sYlo2RGpPdkdpNDY3cjlyNkZZ?oc=5",
     "summary": "QMUL colony now chartered as Chi Eta (XH) the New Chapter of Alpha Kappa Psi Queen Mary University of London",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "‘Where Is My Org?’: Your THON 2017 Guide To The BJC Arena",
@@ -869,7 +869,7 @@
     "date": "2017-02-17T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdENqQlRFOUJqYWdRb29OUG52Zk5SYjFYMGh4a2VEbG44cXhpUTk2bGtHd0s0WVFTSmwtUThtTDRkUHpMWloyVlRtM0JGQzNpQXNqZVBJd3ROcUtIYmVWb0s4Ui1vemVMckJHT1RYUzZ4SDRiTWUzODdTaVQ5ajZYTGM3NW5GWS1zVnpIQTVOOUhLVGs?oc=5",
     "summary": "‘Where Is My Org?’: Your THON 2017 Guide To The BJC Arena Onward State",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Tennessee State Stylish Buzz Of The Week: Adrian Caprice Collins",
@@ -877,7 +877,7 @@
     "date": "2017-01-07T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNk9nQXk3MzFPM1BVUXRPYVN5UHlGYWxzYTJidUdNclQxbU5lOGQ2b091eWpnQVdqbWFlQWJEUzZiTnBsVDNxZTVZQm0ydE4xLUhkRmNESjlWQlp4MmlrYTU3cTBIUU1FaDZtRUxGZXJYV2pNZEs1V3NqSzRWTnp0cGlPWGtOQktOWndRbw?oc=5",
     "summary": "Tennessee State Stylish Buzz Of The Week: Adrian Caprice Collins HBCU Buzz",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Business fraternity hosts \"Pie Face Day\" fundraiser",
@@ -885,7 +885,7 @@
     "date": "2016-11-14T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaEYxRGw2WnRiSFBpYXhud2VBaXFKVlpsNjRDbGRaaWNuam1IX2VMNUozTXNmSk5SUjZjYU1LbkdjM1dSUHdjbDd4QkZ6eXA5RjRNempuSnJMNFRSU25UbmtIQWZ1YWgtSXJhNzgtTUpCUmk0ZlU4aXVrYldIUHoxRnNwX2hIeEtmUUZJ?oc=5",
     "summary": "Business fraternity hosts \"Pie Face Day\" fundraiser WKUHerald.com",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Nov. 1 be-WISE-er event to battle substance abuse",
@@ -893,7 +893,7 @@
     "date": "2016-10-28T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdG1OblppWkVUOVdjeF9qUWF6TEdNSnhQcnc3Y256RTRWS0lWV0N6WUxHNnZIRjZ5MWJEUlZKWmZNNkZlVFgwbVd2Yld3VFpzX3BTUDV4bXZBVVZkVUdMdl83U0REMXZkQmlyUTg4N0kybVpxc05VX0d6dmhxa0xrTGZGR3dlbFZFSG5Cb1VnVHRGdjlMTWwtUGR3?oc=5",
     "summary": "Nov. 1 be-WISE-er event to battle substance abuse UToledo News",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "First be-Wise-er event to promote smart decisions April 5",
@@ -901,7 +901,7 @@
     "date": "2016-03-31T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdG93bVh6QmpOOUJtZ3dYak4yR3o4TWRIc3E0REtlb1VpcElNNFRJZHkxaV9WbDJVZGs1R1NrODJRdVk5Ri1XT01iSzMxT0FjYlNzbUJGUjdkZTcwUHB5QUJqS0RJckVsMFNmazdXM3FOTGlUdnJQMFVxZmJrUVpSYjdmSVdwRXRCeGVtTXpyaVE4c3BpRS1sWnFZOA?oc=5",
     "summary": "First be-Wise-er event to promote smart decisions April 5 UToledo News",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Robert Swaim Obituary (1928 - 2016) - Dodge City, KS - Dodge City Daily Globe",
@@ -909,7 +909,7 @@
     "date": "2016-03-02T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOc3V6M1ZpejBaX0M2OE04aDBqOWE5b3pXRnVLSnRyZkhxMlNXRm11aXhVU05nMlFZRVRmSFktcjMwNmhMckhQYWZ6V0VxSDEwY1BoaV9IRGgzYjhMbXBYQURIWFhSRUtYNjhhbTZiRkVzTmJuMHFyQ2JjRHZtOUdnTDBzelZIbWNaQjJpT0I2OA?oc=5",
     "summary": "Robert Swaim Obituary (1928 - 2016) - Dodge City, KS - Dodge City Daily Globe Legacy obituary",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Robert L. Swaim Obituary Feb 28, 2016",
@@ -917,7 +917,7 @@
     "date": "2016-02-28T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Tbm5ZSzV4YV9Tdy1iMnpkN1prVHNrNEZuaFZVY3BVTG5xT185Y3hvUkdCVWp0NU9xTmZyR2NJNEowRVQ0WmRiNm9GQjdCcV90R1hoRE1BTEJpRXJZRjMtNGlQLVZidzg?oc=5",
     "summary": "Robert L. Swaim Obituary Feb 28, 2016 Swaim Funeral Chapels",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Major Keys To Success: Business Fraternity Rush Begins Thursday",
@@ -925,7 +925,7 @@
     "date": "2016-01-27T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbEZWWmRMcUR2REd0YWJkUzhEcDV6dHFCNlhWMEVaVUxsbWZIbDJicHp3YU5jemR5ZVhPc0xoSnBWX05SbUxqbFh5ejk4eGZRbzczVVNrYk1idm1aX1c0X1g4YnBEZ2NadTF6WnpId3VkOXU4SXNmcXNzQ19yd1NsVVB3cXFDQU1rdlMzN0xlVnpiNFlEOTFab1FoNTdad2s?oc=5",
     "summary": "Major Keys To Success: Business Fraternity Rush Begins Thursday Onward State",
-    "sentiment": "positive"
+    "relevance": "medium"
   },
   {
     "title": "Amjed Osman: 2016 Best and Brightest",
@@ -933,7 +933,7 @@
     "date": "2015-12-07T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWUJVVUVSYUpZbDNwa25icVdDcWlRREx6RFVqRlctS29XTWJ4Z3lRN2MtVWhnT2JXNmh2blBXLW1Ra2xOdHNFM1g2cVJSYmw5UklkMGxhZVpmLUItLW1jYUppdkxuZll2VFJtUnJzUFVnS2U5X1l1Wk55aHRzTE56NU9GMm9FQ2pxcTZSZVZB?oc=5",
     "summary": "Amjed Osman: 2016 Best and Brightest Poets&Quants for Undergrads",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "What Pledging a Business Fraternity Taught Me About Myself",
@@ -941,7 +941,7 @@
     "date": "2015-11-23T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORFRLaUhTc3pXZXFSSU5WOEV1Y1FDSlItYlpqMFMzNy1UOVlBdG9uX2paZ3l5VGdfYnJDWVZBNGxJNFZmeXNPNXM4Rm5fTnpFb3JseGgtRmJPbjRKcmJ1dDBybWxRbUtuSllTeTN5cnBKMVBkcU5Sd25ZRThTZ1l0UGhNdzF2U0F6TElBVHJKRC1BNnFHT1Nsb3o4YzBGZ0VSNngw0gGnAUFVX3lxTE5nOXFsb1Vvb3hKUnB0cFdQZHJxMnlMR3VaTEhhREliLUh6NDZOeVFlX3FQdGxGUmRGaVRIU2tJeUIxaWJ3NkR0eU9QbURrX1hMUWltandwWmZfWElycXc3d0hNajJHSzNGdXoxb2xKbmMtdkp4YlZ3OVlRRjc5YWxCcDgxYUpYaWVkT1VfYkdLNzR3NEJUZk5YamZxSjRCQTZ3OHJ5ZzVn?oc=5",
     "summary": "What Pledging a Business Fraternity Taught Me About Myself Uloop",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Greek life at Georgetown",
@@ -949,7 +949,7 @@
     "date": "2015-08-05T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXVF9FTXRTLXlkVkYzc2JqSVBRNG4xVDczYXRjaUN2Sm01SVJnOTVuYXY5RkZzUmZ0cmJyYTlaZXozT0ctZmx4OWF2YzFyVjBqTWxHdnJjX2hRWE84ZUxKU2p5eEJpdzBkaUNjejJCejltUQ?oc=5",
     "summary": "Greek life at Georgetown The Georgetown Voice",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Lauren N. Bajorek Obituary Jul 19, 2015",
@@ -957,7 +957,7 @@
     "date": "2015-07-19T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBTN0xVT0tfR0NVS2U3VWs1S2NlOXlzYTE4bkE0SUtsR0U5b0VHelJTNWpBVGswTC1UOU44VmRrVnhIWGYzajN4UjA5VzRCUGFxQ3E0bExwZEZ3UTY4Yk0zdXF0eW84Zw?oc=5",
     "summary": "Lauren N. Bajorek Obituary Jul 19, 2015 Heffner Crematory & Funeral Chapels",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Alpha Kappa Alpha suspension lifted",
@@ -965,7 +965,7 @@
     "date": "2015-04-01T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1uendXaUpXWDVsTGV3ZXhzRExmcmZseHVyUDFmQ1NUSDRTRGtSMldVWlQ1UUZhWGM4QzBTU0tzNGh6LWxneG5rTktBbXVDdlItUHJrTkd5NXlHbWdvZl9oNW12aExJajVmSFlJWS1KSWJDd092ZGFvZ25sdXLSAYQBQVVfeXFMTWRSM2V2bV83Yl8xTnd5bGhqVVl5LWZId1U3SUxCbjFia3pLcFVUN1YxZTlxa01GMVgyblhHbHZLNGR2aUZQaEpXZlBkU1RvY1dNQW9jU21ndzhPbVprQnZlc3JNSWpyV3dwM3dQdklscGRQZlJPLWV6WDRPZ01WMnhwR3Jv?oc=5",
     "summary": "Alpha Kappa Alpha suspension lifted The Baylor Lariat",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Before pledge’s death, CSUN’s response to fraternity hazing was limited",
@@ -973,7 +973,7 @@
     "date": "2015-03-01T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUkR4dlVNcFVPWDRIQkt3cThCWnNrR0tWbEdENTY1a0Q2eU11MHF4NjNjZW1aSFdmYnBHb3drWndUeE9QS2dwY0J6SHJlb1FhMHVqNHAtNWJ2dDg5QlhTb0ZLaVljUWRkcVRyUFVNZ2xnVzl2R29Xd041eGVtVW15MkVjeFpiY0Q1SlpCVzdreVdYbkhlS0NMSXlRajlEMWxxMG5lSG1nOEd3aEFlcUE1bGFKOXJ1RVhWYnNr?oc=5",
     "summary": "Before pledge’s death, CSUN’s response to fraternity hazing was limited Los Angeles Daily News",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "Letter to the editor: Business fraternities provide positive academic outlet for Terry students",
@@ -981,7 +981,7 @@
     "date": "2015-01-11T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxObnJUVE9FMldyZXRYWFU1RUxZMDFJbm96MmxRT3hGdGFYaTZsY1lHek53ZVJKbGszUEZ2ZlJ2YURvUk5jUE8wa1hJUV94TVFNbDdtUGM4a2c2bzJoMzNaWVlld283eURDMU9peC1nampyNTNrZnZVdTMyN3ZPOThWOEE1cmlBRFZ1WE05SzJfQnJPNU50ekdkMzQ2ZjZEUklrSmpMdFM4dkxJSTNCRjN4NV9aT3RIRzlyUm9Eam1wYk5hb20zUElRaHpIOElLVWEwWEpyQ0xtd01TdXJDUHF3bGJFVVhRaWFUU3pMb256NmpPdVVMRXFSYjVHOUZaOTZHaVNoXzhmc1Iwdw?oc=5",
     "summary": "Letter to the editor: Business fraternities provide positive academic outlet for Terry students The Red & Black",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "We had a sorority girl rank all of NYU's fraternities (sorry DKE)",
@@ -989,7 +989,7 @@
     "date": "2014-10-05T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPX2dIenBaMjdVMG53VTFFRlJjcDd4SlQtRlZyZEp2bVVlWVo5ZWk3YTN0ZjY3Y2JlVURXU2p6bTNYMENnV3dQWVlheGoyVXhzR0wtcHdwdHhjWEo3eG8xWDRyR3k4OGJEWGpQVWpBRFc2UmI2Smdnd3Y1OC10RVpFR2EzRnBiWDNQWUExRTRRQVRLcXdWbkdMbjlxQQ?oc=5",
     "summary": "We had a sorority girl rank all of NYU's fraternities (sorry DKE) Thrillist",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Get involved: Alpha Kappa Psi",
@@ -997,7 +997,7 @@
     "date": "2014-09-25T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWEpvb2VweWxQTFFtcmNYNlpPcGFINEtrX2pPTVJiWnJQYXFpOTBPMXZsQU92Sm56QXA2LW80M0hKaUJpN2k3dFQwRXNWS2kyTzY0TjFZTkp4TFJaU1AzQ0NLWUFBemIxbFlZZTBnaU5MU1JnZkFNMTJ0SXVKMDhUYQ?oc=5",
     "summary": "Get involved: Alpha Kappa Psi The Daily Aztec",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "Alpha Kappa Psi At NYUAD",
@@ -1005,7 +1005,7 @@
     "date": "2014-09-13T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1OdDFRVGRuUThLM3ZGdFlqeFBmcHBiVnQwOHBfeEQ0SXVxNXNLQjQyeDljdmNvSVJOVTdxWVRlNHJ6TTVGZjMzSHc2bWJSX2pURVZvc2pPMlFJLUl3bGV2YTU4VQ?oc=5",
     "summary": "Alpha Kappa Psi At NYUAD thegazelle.org",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "Disparity in Greek housing due to chapter sizes, funding",
@@ -1013,7 +1013,7 @@
     "date": "2014-05-01T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPc0JScGdBbF9VLXdlaDZScF93enpjb0dmcVNGbTl1YlFhVHdUOWhjSktHdXB6cC01RXNyc1ZSYzJWRHY2ZUJTeWRibFV4NVdKVm1ybllvekd1Q2VqV05SdzhBVEhGUEM2dUduWFdlelRhejlfTHNXaE50Z3hWVE1XamZNTXNRa1VQVEZMcUdoZGZSb1Rka19LemhkQlZFZi1BdTByY2FDV1gybnRrRTNoUklJb2FxQ0szeHZlSHpVQThyYVBYU2hDV0pub0R3a2JhUmJTSzcxZ0phYTN1czdjNG5iYmRqQQ?oc=5",
     "summary": "Disparity in Greek housing due to chapter sizes, funding The Red & Black",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Alpha Kappa Psi 'shaping' brothers for business world",
@@ -1021,7 +1021,7 @@
     "date": "2013-12-02T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQbENjMHdjZUpLSGhLOTNwVWJSM0dPN2RXdmpQdnp0ampfcWc2Mk9rLXdDeVg1dnE4NzJScExGSmxNRUgyS1BvYTE0MUlSdXc2dkdzdWpDaG56cmVmYVVHTU5LcC1mbEdxeXEwMWdoNTd5Q21ZVWs4OWtzOHNieFdnRnVWZTh3YnRkTVNyQTItWGtoazNKWmRHbkhTVE5TWmZXSWZwRDNwc3E2WHYzZlhNM2JKbUhXMDkxb0tKQmdYWnY4VTk3QUkzMW81TXpIdjdkeS1rM3RfUkl1MjJmLTYxZA?oc=5",
     "summary": "Alpha Kappa Psi 'shaping' brothers for business world The Red & Black",
-    "sentiment": "neutral"
+    "relevance": "high"
   },
   {
     "title": "Alphabet Soup: Sigma Alpha Iota sisters use music as platform for philanthropy, sisterhood",
@@ -1029,7 +1029,7 @@
     "date": "2013-11-04T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPUlBRZmZpNnQ0dFBvNV9QRktHR3dwenV4ck9KRVNOaERha2VaLVkwWFpvSWJPY2QyV3ZJNW84TjBGMFZyRkY2SVRYTlhzSkZlbWdWWjhaWGxkb21iMVlEVlRXWFgxS0xLRGtxV19TSmVoVkkzUVdUb25kb281RTBLU3A1cERBTEVmbERpZkZ4NVJuZzVfck5yRG1iUFozVXdsVjhkMVBjTWlHOXhXcko4bm1QNXZTY1NoN21oWVNqNnhxTXFXOUxLREVMVFlMYnhPUEE3QXlGVTVERm5iNDJEb0J1MFBadXVzUF9KYnA0S2dSQnRMZGtxX050cjEtR3RoOHJYMkRnZ1l3dERveG1yT3dR?oc=5",
     "summary": "Alphabet Soup: Sigma Alpha Iota sisters use music as platform for philanthropy, sisterhood The Red & Black",
-    "sentiment": "positive"
+    "relevance": "low"
   },
   {
     "title": "Alphabet Soup: Delta Sigma Phi embraces Red Cross philanthropy",
@@ -1037,7 +1037,7 @@
     "date": "2013-10-29T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPRnR5ZnlyS2xyYWlVX2czR1BjUm5wZmM4akxBa1FjWmxaR0s1Z3hRNkhjaWY5Z3dtR3h0cHgtdlJuNW1LdGVKQzhCSk5CczlXSjA2QkVMLTdtb3RnSWVVbTRXU2VwWlFzQndmd1ZkRFNFc2J6ZWhkeTdvLUt3ZFJnalhGTUxyMGpNUEJ4LTdSbmZOTllTVy0xWHk4Tkk0TVFhcDJ5c2lnMFczWkN5Y3llVXVPa2cxbTFaZDNwcDh2anN1Zlh5aHlfVU9CU29SWXZVZks3SDc0NDJ1ZC1PckVYYS1UUjd3aE4taHdBeHdR?oc=5",
     "summary": "Alphabet Soup: Delta Sigma Phi embraces Red Cross philanthropy The Red & Black",
-    "sentiment": "positive"
+    "relevance": "low"
   },
   {
     "title": "Director Fabio Jafet to speak Sept. 13",
@@ -1045,7 +1045,7 @@
     "date": "2012-09-04T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWUtIQXhfRzB1LWJUSEJyQlY5TS1Pc2VJYWhZaWtQTmVyTzc0a3IzUVF3QVVPMi1qc19CNEdwbXF6dFNkNVZrSjVRWDVoOXRqT1VVOG9WcUZMUTBFX2NUMUNzMk5QY1E1N21kZFlDc0szdWVZWU9fOTk2dHlRY01OUGZ2cw?oc=5",
     "summary": "Director Fabio Jafet to speak Sept. 13 Stetson University",
-    "sentiment": "neutral"
+    "relevance": "low"
   },
   {
     "title": "Kappa Alpha Psi Celebrates 100 Years of Brotherhood, Service",
@@ -1053,7 +1053,7 @@
     "date": "2011-07-07T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPY2JOOWE0dGx5bVJVS05xV1BWdGI0cUpTaDM4VnNvaHhLTkhGSm8xUEVCVG14M1d1SkVSRWp2ZXFDNTMyOWxGbmRhdWNHTko3TkpvdHMxME9HY2FRbUZrSmZhaDJ6U21TT0p6SmJGdkJQYWdiQ2hYQ05kTXJGdS1LV0M1aw?oc=5",
     "summary": "Kappa Alpha Psi Celebrates 100 Years of Brotherhood, Service AFRO American Newspapers",
-    "sentiment": "neutral"
+    "relevance": "medium"
   },
   {
     "title": "Frank Giitter Obituary (2008) - Omaha, NE - Omaha World-Herald",
@@ -1061,7 +1061,7 @@
     "date": "2008-06-17T07:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQS1zdXZ5d1ZOcjRTX1BleGNTRVlYSzd3WlkzQkRONHAzbm9JTXNENG4tOWdwbERLdGlQLWFPYUNianBuZ251SFFlNzF4dUotVDZPVW5vTW5fQWN0aFFrOTdTNHV1cWZVYlROMWNieGVEUXRVbjQybGdXWVYtRWc5UVpDSXZzYlVE?oc=5",
     "summary": "Frank Giitter Obituary (2008) - Omaha, NE - Omaha World-Herald Legacy obituary",
-    "sentiment": "negative"
+    "relevance": "low"
   },
   {
     "title": "One Business Fraternity Leaves Campus, Another Hopes to Thrive",
@@ -1069,6 +1069,6 @@
     "date": "2006-03-21T08:00:00+00:00",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSEloMGROQmtaYXcyOHZqWUNKdzU5eGwyNkhkSDg2Sm14dTM5SExfSzlISG9YZ1AtTUUwUFY3Zjhzb181cFBTTzd0RE5YN0R2dzB2RGh3TEV4djRITThxYzg1ZVA0QzVpM2xCXzhPS2c0N2RycnhORnVMc2FuN1J4UlZKVXljcU1SRkE4OHg4VldCNEZvRWRzaUxlMGo?oc=5",
     "summary": "One Business Fraternity Leaves Campus, Another Hopes to Thrive The Hoya",
-    "sentiment": "neutral"
+    "relevance": "medium"
   }
 ]
