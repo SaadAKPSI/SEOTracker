@@ -3,8 +3,9 @@
 fetch_mentions.py
 -----------------
 Fetch mentions of "Alpha Kappa Psi" from free RSS feeds (Google Alerts +
-optional public news feeds), filter for relevance, run a lightweight
-sentiment heuristic, deduplicate, and append new items to data/mentions.json.
+optional public news feeds), filter for relevance, grade each mention by how
+central Alpha Kappa Psi is to the article (AKPsi relevance: high/medium/low),
+deduplicate, and append new items to data/mentions.json.
 
 Zero paid APIs. Requires only: requests, feedparser.
 """
@@ -25,10 +26,6 @@ import feedparser
 import requests
 
 # --------------------------------------------------------------------------- #
-# Configuration
-# --------------------------------------------------------------------------- #
-
-# --------------------------------------------------------------------------- #
 # Feed sources (all free, no API keys)
 # --------------------------------------------------------------------------- #
 #
@@ -44,9 +41,7 @@ _GNEWS = "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
 # only articles that contain the EXACT phrase "Alpha Kappa Psi" somewhere in the
 # article (headline OR body). Because Google guarantees the phrase, these feeds
 # are "trusted": every returned item is a real body-level mention, so we accept
-# them without also requiring the phrase in the RSS title. The recency passes
-# (when:1y / when:6m / when:30d) surface the most recent coverage, which Google's
-# default relevance sort otherwise buries under older evergreen articles.
+# them without also requiring the phrase in the RSS title.
 _PHRASE_QUERIES = [
     '%22Alpha+Kappa+Psi%22',
     '%22Alpha+Kappa+Psi%22+when:1y',      # last 12 months
@@ -57,15 +52,9 @@ _PHRASE_QUERIES = [
     '%22Alpha+Kappa+Psi%22+philanthropy',
 ]
 
-# Feeds are (url, trusted). trusted=True → accept every returned item, because
-# Google already verified the exact phrase. Add non-trusted feeds (e.g. a broad
-# Google Alert or a topical query) and they'll pass through the relevance filter.
+# Feeds are (url, trusted). trusted=True -> accept every returned item, because
+# Google already verified the exact phrase.
 FEEDS = [(_GNEWS.format(q=q), True) for q in _PHRASE_QUERIES]
-
-# Paste your own Google Alerts RSS feed URL(s) here for cleaner DIRECT links.
-# A Google Alert built on "Alpha Kappa Psi" is also exact-phrase, so mark it
-# trusted. See README for how to create one (free, no key). Example:
-#   FEEDS.append(("https://www.google.com/alerts/feeds/00000.../00000...", True))
 
 # Allow the environment to inject trusted feeds (comma-separated) without edits.
 if os.environ.get("AKPSI_FEEDS"):
@@ -99,39 +88,76 @@ FRAT_CONTEXT_RE = re.compile(
 )
 
 # --------------------------------------------------------------------------- #
-# Sentiment (keyword heuristic — no external NLP dependency)
+# AKPsi relevance grading (keyword heuristic - no external NLP dependency)
 # --------------------------------------------------------------------------- #
+#
+# Relevance measures how CENTRAL Alpha Kappa Psi is to an article - not its
+# tone. This deliberately replaces the older positive/neutral/negative
+# sentiment tag, which mislabeled respectful obituaries and accident coverage
+# (where a member's AKPsi affiliation is merely noted) as "negative" and
+# overstated the amount of bad press for a nationals-facing dashboard.
+#
+#   high   - Alpha Kappa Psi is the subject of the headline: chapter features,
+#            member/alumni spotlights centered on AKPsi, charters/installations,
+#            awards or recognition of AKPsi, conventions, philanthropy drives.
+#   medium - AKPsi is a notable-but-shared element: business-fraternity / Greek-
+#            life stories, rush coverage, alumni/graduate spotlights, or general
+#            fraternity news that features AKPsi among others.
+#   low    - AKPsi is a passing, incidental mention: obituaries, memorials,
+#            accident/death coverage, and off-topic news where the phrase only
+#            appears deep in the body.
 
-POSITIVE_WORDS = {
-    "award", "awards", "honor", "honored", "celebrate", "celebrated",
-    "success", "successful", "achievement", "achievements", "win", "wins",
-    "winner", "recognized", "recognition", "growth", "raised", "charity",
-    "volunteer", "volunteered", "scholarship", "excellence", "proud",
-    "leadership", "philanthropy", "donate", "donated", "milestone",
-    "welcome", "inducted", "thriving", "praise", "outstanding",
-}
+# Phrase present in the *headline* itself -> the article is about AKPsi.
+_TITLE_PHRASE_RE = re.compile(r"alpha\s+kappa\s+psi|\bak[\s\-]?psi\b", re.IGNORECASE)
 
-NEGATIVE_WORDS = {
-    "hazing", "lawsuit", "suspended", "suspension", "expelled", "banned",
-    "investigation", "misconduct", "scandal", "death", "died", "dies",
-    "dead", "dying", "killed", "crash", "accident", "obituary", "tragic",
-    "tragedy", "arrest", "arrested", "charged", "embezzling", "embezzled",
-    "violation", "probation", "controversy", "sanctions", "sanction",
-    "allegation", "allegations", "accused", "fine", "fined", "revoked",
-    "disciplinary", "assault", "complaint", "dropped",
-}
+# Somber / incidental coverage: force low relevance regardless of other signals.
+MEMORIAL_WORDS = (
+    "obituary", "obituaries", "funeral", "memorial", "in memoriam",
+    "passed away", "passes away", "passing of", "celebration of life",
+    "tribute", "condolence", "visitation", "crematory", "cremation",
+    "dies", "died", "dead", "death", "killed", "fatal", "crash",
+    "accident", "plunge", "remembering",
+)
+
+# Fraternity / Greek-life context in the headline -> at least medium relevance.
+FRAT_TITLE_WORDS = (
+    "fraternit", "sororit", "greek", "brotherhood", "chapter", "pledge",
+    "rush", "panhellenic", "interfraternity", "colony", "thon", "little 500",
+)
+
+# Headline framings that typically feature a member's AKPsi involvement.
+FEATURE_TITLE_WORDS = (
+    "spotlight", "alumni", "alumnus", "alumna", "graduate", "profile",
+    "best & brightest", "best and brightest", "honoree", "scholarship",
+    "leadership", "internship",
+)
 
 
-def classify_sentiment(text: str) -> str:
-    """Return 'positive', 'negative', or 'neutral' from a keyword tally."""
-    tokens = re.findall(r"[a-z']+", (text or "").lower())
-    pos = sum(1 for t in tokens if t in POSITIVE_WORDS)
-    neg = sum(1 for t in tokens if t in NEGATIVE_WORDS)
-    if neg > pos:
-        return "negative"
-    if pos > neg:
-        return "positive"
-    return "neutral"
+def classify_relevance(title: str, summary: str = "") -> str:
+    """Return 'high', 'medium', or 'low' AKPsi relevance from a headline heuristic.
+
+    Summaries from Google News RSS are essentially the headline plus the source
+    name, so grading keys primarily off the title.
+    """
+    t = (title or "").lower()
+    blob = f"{title} {summary}".lower()
+
+    # Memorial / accident coverage is incidental to AKPsi -> low, even if the
+    # fraternity is named. This is the exact case the sentiment tag mishandled.
+    if any(w in blob for w in MEMORIAL_WORDS):
+        return "low"
+
+    # Alpha Kappa Psi named in the headline -> the piece is about AKPsi.
+    if _TITLE_PHRASE_RE.search(t):
+        return "high"
+
+    # Fraternity/Greek context or member-feature framing in the headline -> the
+    # article meaningfully involves AKPsi among other subjects.
+    if any(w in t for w in FRAT_TITLE_WORDS) or any(w in t for w in FEATURE_TITLE_WORDS):
+        return "medium"
+
+    # Phrase only surfaces deep in the body -> incidental mention.
+    return "low"
 
 
 # --------------------------------------------------------------------------- #
@@ -242,13 +268,31 @@ def load_existing() -> list:
         return []
 
 
+def migrate_relevance(items: list) -> int:
+    """Backfill AKPsi relevance on existing entries and drop the legacy
+    sentiment tag. Returns the number of entries changed so callers can decide
+    whether a re-save is warranted even when no new mentions were fetched."""
+    changed = 0
+    for item in items:
+        had_sentiment = "sentiment" in item
+        needs_relevance = not item.get("relevance")
+        if needs_relevance:
+            item["relevance"] = classify_relevance(
+                item.get("title", ""), item.get("summary", "")
+            )
+        if had_sentiment:
+            item.pop("sentiment", None)
+        if needs_relevance or had_sentiment:
+            changed += 1
+    return changed
+
+
 def normalize_entry(entry, feed, trusted: bool = False) -> dict | None:
     title = strip_html(getattr(entry, "title", ""))
     summary = strip_html(getattr(entry, "summary", getattr(entry, "description", "")))
 
     # Trusted feeds (exact-phrase Google News / Google Alerts) already guarantee
     # the phrase appears in the article body, so we skip the title-level check.
-    # Non-trusted feeds must still pass the relevance filter.
     if not trusted and not is_relevant(title, summary):
         return None
 
@@ -265,13 +309,17 @@ def normalize_entry(entry, feed, trusted: bool = False) -> dict | None:
         "date": parse_date(entry),
         "url": url,
         "summary": summary or clean_title,
-        "sentiment": classify_sentiment(f"{title} {summary}"),
+        "relevance": classify_relevance(clean_title or title, summary),
     }
 
 
 def run() -> int:
     os.makedirs(DATA_DIR, exist_ok=True)
     existing = load_existing()
+    # Re-grade legacy entries (sentiment -> relevance) in place.
+    migrated = migrate_relevance(existing)
+    if migrated:
+        print(f"Re-graded {migrated} existing entr(ies) to AKPsi relevance.")
     seen_urls = {item.get("url") for item in existing}
 
     new_items = []
@@ -286,11 +334,11 @@ def run() -> int:
                 new_items.append(item)
 
     if not new_items:
-        print("No new mentions found.")
-        # Still ensure the file exists for the dashboard.
-        if not os.path.exists(DATA_FILE):
+        # Persist the migration even when there is nothing new to add.
+        if migrated or not os.path.exists(DATA_FILE):
             with open(DATA_FILE, "w", encoding="utf-8") as fh:
                 json.dump(existing, fh, indent=2, ensure_ascii=False)
+        print("No new mentions found.")
         return 0
 
     # Newest first: prepend new items, then cap total size.
